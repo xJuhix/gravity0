@@ -10,11 +10,12 @@
   justify-content: space-evenly;
   align-items: center;
 	margin-bottom: 3rem;
-	margin-top: 3rem;
 
 	.btn-explore {
 		background-color: $colour-white;
-		border-radius: 30px;
+		border-radius: 50%;
+		height: 200px;
+		width: 200px;
 		border: solid;
 		font-size: 24px;
 		font-family: $font-navlink;

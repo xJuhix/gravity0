@@ -6,13 +6,13 @@ import Heading from '../layout/Heading';
 import Row  from 'react-bootstrap/Row';
 import Col  from 'react-bootstrap/Col';
 import APOD from '../nasa/APOD';
-import moonImg from '../../images/moonimg.png';
+import moonImg from '../../images/moonImg.png';
 
 
 export function Home() {
   return (
 		<>
-    <div className="background-image" style={{ backgroundImage: `src(${moonImg})` }}>>
+    <div className="background-image" style={{ backgroundImage: `src(${moonImg})` }}>
       <Helmet>
         <title>Home</title>
         <meta
