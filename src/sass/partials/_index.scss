@@ -1,26 +1,15 @@
-.jumbotron {
-  background-color: $colour-white;
-  margin-bottom: 3rem;
-  margin-left: 0;
-  margin-right: 0;
-  text-align: center;
-  width: 100%;
-}
-
-.browse__button{
+.explore__buttons{
 	display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-	height: 200px;
 	margin-bottom: 3rem;
+	margin-top: 3rem;
 
-	.btn-browse {
+	.btn-explore {
 		background-color: $colour-white;
 		border-radius: 30px;
 		border: solid;
-		width: 400px;
-		margin-top: 3rem;
-		font-size: 28px;
+		font-size: 24px;
 		font-family: $font-navlink;
 		font-weight: 500;
 

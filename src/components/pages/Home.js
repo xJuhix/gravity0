@@ -20,18 +20,48 @@ export function Home() {
         />
       </Helmet>
 
-      <Jumbotron>
-        <Container>
-          <Heading title="My opinions and views on Books, Economics and Productivity" />
-        </Container>
-      </Jumbotron>
+      <div className="explore__buttons">
+        <Link to="/marsrover/">
+          
+          <Button variant="explore" size="lg">
+            
+            See Mars through Rover's Eyes
+          </Button>
+        </Link>
 
-      <div className="browse__button">
-        <Link to="/search/">
-          {' '}
-          <Button variant="browse" size="lg">
-            {' '}
-            Browse Articles
+				<Link to="/hubbel/">
+          
+          <Button variant="explore" size="lg">
+            
+            What is Hubble talking about
+          </Button>
+        </Link>
+
+				<Link to="/iss/">
+          
+          <Button variant="explore" size="lg">
+            
+           Find out who is in space right now
+          </Button>
+        </Link>
+
+				</div>
+				
+				<div className="explore__buttons">
+
+				<Link to="/marsrover/">
+          
+          <Button variant="explore" size="lg">
+            
+            What is James Webb seeing
+          </Button>
+        </Link>
+
+				<Link to="/marsrover/">
+          
+          <Button variant="explore" size="lg">
+            
+            How are we gonna get to Mars
           </Button>
         </Link>
       </div>
