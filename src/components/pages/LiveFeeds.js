@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Heading from '../layout/Heading';
-import ProductivityImg from '../../images/productivityimg.jpg';
+
 
 export function Productivity() {
   return (
@@ -51,13 +51,6 @@ export function Productivity() {
                 implement them in your life as well.
               </p>
             </div>
-          </Col>
-          <Col sm={12} lg={6} className="category__image">
-            <img
-              src={ProductivityImg}
-              className="image"
-              alt="Computer and plant"
-            />
           </Col>
         </Row>
       </div>

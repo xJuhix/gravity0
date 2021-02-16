@@ -7,7 +7,7 @@ $font-navlink: 'Playfair Display', serif;
 $font-p: 'Open Sans', sans-serif;
 
 h1 {
-  color: $colour-heading;
+  color: $colour-white;
   font-family: $font-h1;
   padding-top: 1.5rem;
 	text-align: center;
@@ -44,6 +44,7 @@ q {
   font-family: $font-navlink;
   font-size: 32px;
 	text-align: center;
+	color: $colour-white;
 
 	@media (max-width: 576px) {
 		font-size: 28px;

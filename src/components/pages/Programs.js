@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Heading from '../layout/Heading';
-import Piggybank from '../../images/piggybank.jpg';
+
 
 export function Economics() {
   return (
@@ -53,13 +53,6 @@ export function Economics() {
                 comments on current affairs that I find facinating.
               </p>
             </div>
-          </Col>
-          <Col sm={12} lg={6} className="category__image">
-            <img
-              src={Piggybank}
-              className="image"
-              alt="Pink piggybank"
-            />
           </Col>
         </Row>
       </div>

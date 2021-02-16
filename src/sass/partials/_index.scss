@@ -1,3 +1,8 @@
+.background-image{
+	background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
 .explore__buttons{
 	display: flex;
   justify-content: space-evenly;
@@ -19,13 +24,13 @@
 		}
 		
 		&:hover {
-			background-color: $colour-headerfooter;
+			background-color: $colour-button;
 			color: $colour-secondary;
 			text-decoration: underline;
 			text-decoration-style: solid;
 			text-decoration-thickness: 3px;
 			text-decoration-color: $colour-secondary;
-			-webkit-text-decoration-color: $colour-secondary ;
+			-webkit-text-decoration-color: $colour-secondary;
 			-webkit-text-decoration-thickness: 3px ;
 			-webkit-text-decoration-style: solid ;
 		}
@@ -33,10 +38,11 @@
 }
 
 
-.about {
+.page-intro {
 	margin-top: 7rem;
 	margin-bottom: 7rem;
-	background-color: $colour-white;
+	background-color: $colour-headerfooter;
+	color: $colour-white;
 
 	@media (min-width: 768px) and (max-width: 1024px) {
 		height: 550px;
@@ -51,56 +57,25 @@
       height: auto;
     }
 	}
-	
-	&__image {
-  display: flex;
-	justify-content: center; 
-	margin-bottom: 12rem;
 
-		@media (min-width: 768px) and (max-width: 1080px) {
-			margin-left: 3rem;
-		}
-		@media (max-width: 576px) {
-			margin-bottom: 2rem;
-
-		}
-
-		.photo {
-			bottom: 90px;
-			height: 500px;
-			position: relative;
-
-			@media (min-width: 768px) and (max-width: 1080px) {
-				bottom: 0;
-				margin-top: 1.5rem;
-				width: 370px;
-			}
-
-			@media (max-width: 576px) {
-				bottom: 0;
-				margin-top: 2rem;
-				width: 370px; 
-			}
-		}
-	}
-
-	&__text {
-		padding: 35px;
+	&__blockquote {
+		background-color: $colour-headerfooter;
+		color: $colour-white;
+		margin-left: 3rem;
+		margin-top: 2rem;
+		max-width: 700px;
 
 		@media (min-width: 768px) and (max-width: 1024px) {
-			margin-left: 3rem;
-			margin-top: 7rem;
+			margin-left: 2rem;
+			margin-right: 2rem;
 		}
-		@media (max-width: 576px) {
-			padding: 15px;
-			width: auto;
-		}
-		
 
-		h3 {
-			font-size: 32px;
-			text-align: center;
+		@media (max-width: 576px) {
+			margin-left: 0.5rem;
+			max-width: 550px;
+			padding: 5px;
 		}
+	}
 
 		p {
 			font-size: 18px;
@@ -118,7 +93,10 @@
 			}
 			
 		}
-	}	
+		
+	.blockquote-footer{
+		color: $colour-white;
+	}
 
 }
 

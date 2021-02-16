@@ -1,17 +1,16 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import Heading from '../layout/Heading';
-import Felix from '../../images/fw.png';
+import Row  from 'react-bootstrap/Row';
+import Col  from 'react-bootstrap/Col';
+
 
 export function Home() {
   return (
-    <>
+		<>
+    <div className="background-image" styles={{ backgroundImage:`url(space.png)` }}>
       <Helmet>
         <title>Home</title>
         <meta
@@ -21,26 +20,21 @@ export function Home() {
       </Helmet>
 
       <div className="explore__buttons">
-        <Link to="/marsrover/">
-          
+
+        <Link to="/marsrover/"> 
           <Button variant="explore" size="lg">
-            
-            See Mars through Rover's Eyes
+            See Mars through Curiosity's Eyes
           </Button>
         </Link>
 
 				<Link to="/hubbel/">
-          
           <Button variant="explore" size="lg">
-            
             What is Hubble talking about
           </Button>
         </Link>
 
 				<Link to="/iss/">
-          
           <Button variant="explore" size="lg">
-            
            Find out who is in space right now
           </Button>
         </Link>
@@ -50,45 +44,49 @@ export function Home() {
 				<div className="explore__buttons">
 
 				<Link to="/marsrover/">
-          
           <Button variant="explore" size="lg">
-            
             What is James Webb seeing
           </Button>
         </Link>
 
 				<Link to="/marsrover/">
-          
-          <Button variant="explore" size="lg">
-            
+          <Button variant="explore" size="lg"> 
             How are we gonna get to Mars
           </Button>
         </Link>
+
       </div>
 
-      <h2>Meet Me</h2>
+			<Row>
+				<Col>
+				<div className="page-intro">
+					<Heading title="Gravity0" />
+						<h2>Microsite for NASA</h2>
+							<p>
+								Here you will find NASA's active and upcoming missions and programs, the technology that is being devloped for the mission and programs is revolutionary.
+								NASA has over the years devloped partnerships with other space agencies both private and government owned. So we as a world have come together to explore the endless unknown.
+								The purpose of GravityZero is to infrom the public about NASA's currently active space programs and missions as well as upcoming ones. We would like to share our knowledge about NASA's international collaborations.
+							</p>
+        
+							<blockquote className="page__blockquote">
+              <q>
+								Curiosity is the essence of our excistence
+              </q>
+              <footer className="blockquote-footer">
+              	Gene Cernan
+              </footer>
+            </blockquote>
+        </div>
+				</Col>
+				<Col>
 
-      <div className="about">
-        <Row>
-          <Col sm={6} md={5} className="about__image">
-            <img src={Felix} className="photo" alt="Felix Wittig" />
-          </Col>
-          <Col sm={6} md={5} className="about__text">
-            <h3>Felix Wittig</h3>
-            <p>
-              Hi friends, my name is Felix and I am a Business
-              Administration student based in Germany and I truly
-              believe that most of worlds problems can be solved with
-              good economics. I also love reading and am an absolute
-              productivity nerd.
-            </p>
-          </Col>
-        </Row>
-      </div>
+					<p>Add img of the day + description</p>
 
-      <h2>Recent Articles</h2>
-      <div />
-    </>
+				</Col>
+			</Row>
+
+    </div>
+		</>
   );
 }
 
