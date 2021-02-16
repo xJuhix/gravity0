@@ -32,37 +32,30 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto nav__item">
-            <NavDropdown
-              title="Missions"
-              to="/missions"
-              className="nav__link"
-              id="collasible-nav-dropdown"
-            >
-              <NavDropdown.Item href="#action/3.1">Hubble</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">James Webb</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Space X</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown
-              title="Programs"
-              to="/programs"
-              className="nav__link"
-              id="collasible-nav-dropdown"
-            >
-              <NavDropdown.Item href="#action/3.1">ISS</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Mars</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">
-                Moon to Mars
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown
-              title="Live Feeds"
-              to="/livefeeds"
-              className="nav__link"
-              id="collasible-nav-dropdown"
-            >
-              <NavDropdown.Item href="#action/3.1">Space</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Telescope</NavDropdown.Item>
-            </NavDropdown>
+					<NavLink to="/event" className="nav__link">
+              Telescopes
+            </NavLink>
+          <NavDropdown
+						title="Programs"
+						to="/programs"
+						className="nav__link"
+						id="collasible-nav-dropdown"
+					>
+						<NavDropdown.Item href="#action/3.1" className="dropdown__item">ISS</NavDropdown.Item>
+						<NavDropdown.Item href="#action/3.2" className="dropdown__item">Mars</NavDropdown.Item>
+						<NavDropdown.Item href="#action/3.3" className="dropdown__item">
+							Moon to Mars
+						</NavDropdown.Item>
+          </NavDropdown>
+					<NavDropdown
+						title="Live Feeds"
+						to="/livefeeds"
+						className="nav__link"
+						id="collasible-nav-dropdown"
+					>
+						<NavDropdown.Item href="#action/3.1" className="dropdown__item">Space</NavDropdown.Item>
+						<NavDropdown.Item href="#action/3.2" className="dropdown__item">Telescope</NavDropdown.Item>
+					</NavDropdown>
             <NavLink to="/event" className="nav__link">
               Events
             </NavLink>

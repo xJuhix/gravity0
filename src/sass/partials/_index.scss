@@ -1,5 +1,5 @@
 .jumbotron {
-  background-color: $colour-secondary;
+  background-color: $colour-white;
   margin-bottom: 3rem;
   margin-left: 0;
   margin-right: 0;
@@ -15,7 +15,7 @@
 	margin-bottom: 3rem;
 
 	.btn-browse {
-		background-color: $colour-secondary;
+		background-color: $colour-white;
 		border-radius: 30px;
 		border: solid;
 		width: 400px;
@@ -31,12 +31,12 @@
 		
 		&:hover {
 			background-color: $colour-headerfooter;
-			color: $colour-blue;
+			color: $colour-secondary;
 			text-decoration: underline;
 			text-decoration-style: solid;
 			text-decoration-thickness: 3px;
-			text-decoration-color: $colour-blue;
-			-webkit-text-decoration-color: $colour-blue ;
+			text-decoration-color: $colour-secondary;
+			-webkit-text-decoration-color: $colour-secondary ;
 			-webkit-text-decoration-thickness: 3px ;
 			-webkit-text-decoration-style: solid ;
 		}
@@ -47,7 +47,7 @@
 .about {
 	margin-top: 7rem;
 	margin-bottom: 7rem;
-	background-color: $colour-secondary;
+	background-color: $colour-white;
 
 	@media (min-width: 768px) and (max-width: 1024px) {
 		height: 550px;

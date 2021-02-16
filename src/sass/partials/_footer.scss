@@ -1,6 +1,6 @@
 .footer {
   background-color: $colour-headerfooter;
-  color: $colour-secondary;
+  color: $colour-white;
 
   @media (max-width: 576px) {
     text-align: center;
@@ -24,12 +24,12 @@
   }
 
   &__socialmedia-icon {
-    color: $colour-secondary;
+    color: $colour-white;
     padding: 5px;
 		padding-top: 10px;
 		
 		:hover{
-			color: $colour-blue;
+			color: $colour-secondary;
 		}
 
 		span {

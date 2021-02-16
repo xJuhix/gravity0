@@ -2,10 +2,9 @@
   background: $colour-headerfooter;
 
   &__brand {
-		color: $colour-secondary;
-    height: 90px;
+    height: 100px;
     margin-left: 2rem;
-    width: 350px;
+    width: 400px;
 
     @media (max-width: 768px) {
       height: 70px;
@@ -20,17 +19,16 @@
 	}
 	
 	.navbar-toggler-icon {
-		color: $colour-secondary;
+		color: $colour-white;
 
 		@media (max-width: 770px) and (min-width: 576px) {
 			margin-right: 3rem;
 		}
 	}
 
-
-	&__link {
+	&__link{
 		border-radius: 5px;
-		color: $colour-secondary !important;
+		color: $colour-white !important;
 		font-family: $font-navlink;
 		font-size: 28px;
 		margin-right: 30px;
@@ -39,21 +37,19 @@
 		transition: all 0.4s;
 
 		&:hover {
-			text-decoration: underline $colour-blue 3px;
-			text-decoration-color: $colour-blue;
-			-webkit-text-decoration-color: $colour-blue;
+			text-decoration: underline $colour-secondary 3px;
+			text-decoration-color: $colour-secondary;
+			-webkit-text-decoration-color: $colour-secondary;
 		}
 		
 		&.active, &:active {
 			text-decoration: underline;
 			text-decoration-style: solid;
 			text-decoration-thickness: 3px;
-			text-decoration-color: $colour-blue;
-			-webkit-text-decoration-color: $colour-blue ;
+			text-decoration-color: $colour-secondary;
+			-webkit-text-decoration-color: $colour-secondary;
 			-webkit-text-decoration-thickness: 3px ;
 			-webkit-text-decoration-style: solid ;
-	
-			
 		}
 	}
 }
