@@ -28,24 +28,6 @@
     }
   }
 
-  &__blockquote {
-    background-color: $colour-white;
-    margin-left: 3rem;
-    margin-top: 2rem;
-		max-width: 700px;
-
-		@media (min-width: 768px) and (max-width: 1024px) {
-			margin-left: 2rem;
-			margin-right: 2rem;
-		}
-
-    @media (max-width: 576px) {
-      margin-left: 0.5rem;
-      max-width: 550px;
-      padding: 5px;
-    }
-  }
-
   &__text {
     margin-left: 3rem;
 		margin-top: 3rem;
