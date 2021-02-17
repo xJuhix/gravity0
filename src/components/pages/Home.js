@@ -47,17 +47,17 @@ export function Home() {
         </Row>
 
         <div className="explore__buttons">
-          <Link to="/marsrover/">
+          <a href="https://eyes.nasa.gov/curiosity/">
             <Button variant="explore" size="lg">
               See Mars through Curiosity's Eyes
             </Button>
-          </Link>
+          </a>
 
-          <Link to="/hubbel/">
+          <a href="http://spacetelescopelive.org">
             <Button variant="explore" size="lg">
-              What is Hubble talking about
+              What is Hubble looking at now ?
             </Button>
-          </Link>
+          </a>
 
           <Link to="/iss/">
             <Button variant="explore" size="lg">

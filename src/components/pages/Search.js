@@ -1,7 +1,6 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import Heading from '../layout/Heading';
-
+import React from "react";
+import { Helmet } from "react-helmet";
+import Heading from "../layout/Heading";
 
 export function AllArticles() {
   return (

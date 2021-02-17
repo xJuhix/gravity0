@@ -8,7 +8,7 @@ export function Books() {
   return (
     <>
       <Helmet>
-        <title>Books</title>
+        <title>Telescopes</title>
         <meta
           name="description"
           content="WittigNotes Books page, here you will find book recomentdation, book reviews and my book bag."

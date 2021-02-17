@@ -1,9 +1,9 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Heading from '../layout/Heading';
-
+/* eslint-disable react/no-unescaped-entities */
+import React from "react";
+import { Helmet } from "react-helmet";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Heading from "../layout/Heading";
 
 export function Economics() {
   return (
@@ -35,22 +35,18 @@ export function Economics() {
             <Heading title="Economics" />
             <blockquote className="category__blockquote">
               <q>
-                Economics is everywhere, and understanding economics
-                can help you make better decisions and lead a happier
-                life.
+                Economics is everywhere, and understanding economics can help
+                you make better decisions and lead a happier life.
               </q>
-              <footer className="blockquote-footer">
-                Tyler Cowen
-              </footer>
+              <footer className="blockquote-footer">Tyler Cowen</footer>
             </blockquote>
             <div className="category__text">
               <p>
-                For me economics explains everything. One can have the
-                best idea in the world but if the idea doesn't make
-                financial sense it will fail no matter how good it
-                was. Economics is everywhere and its vital to
-                understand it well. In this category I will share some
-                comments on current affairs that I find facinating.
+                For me economics explains everything. One can have the best idea
+                in the world but if the idea doesn't make financial sense it
+                will fail no matter how good it was. Economics is everywhere and
+                its vital to understand it well. In this category I will share
+                some comments on current affairs that I find facinating.
               </p>
             </div>
           </Col>
@@ -58,8 +54,7 @@ export function Economics() {
       </div>
 
       <h2>Economics Articles</h2>
-      <div>
-      </div>
+      <div />
     </>
   );
 }

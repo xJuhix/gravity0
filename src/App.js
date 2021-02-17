@@ -1,7 +1,7 @@
-import React from 'react';
-import Navigation from './components/layout/Navigation';
-import Footer from './components/layout/Footer';
-import './sass/style.scss';
+import React from "react";
+import Navigation from "./components/layout/Navigation";
+import Footer from "./components/layout/Footer";
+import "./sass/style.scss";
 
 function App() {
   return (

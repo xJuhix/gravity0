@@ -76,7 +76,7 @@ function Navigation() {
       </Navbar>
       <Switch>
         <Route path={["/", "/home"]} exact component={Home} />
-        <Route path="/missions" component={Telescopes} />
+        <Route path="/telescopes" component={Telescopes} />
         <Route path="/programs" component={Programs} />
         <Route path="/livefeeds" component={LiveFeeds} />
         <Route path="/events" component={Events} />
