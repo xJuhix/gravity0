@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
@@ -49,25 +48,30 @@ function NasaDailyImage() {
         {image && (
           <>
             <Container>
-							<Heading title={image.title} />
-								<Image
-									src={image.url}
-									width="100%"
-									className="Nasa-APOD"
-								/>
-
+						<Heading title={image.title} />
+							<Row>
+								<Col>
+									<Image
+										src={image.url}
+										width="100%"
+										className="Nasa-APOD"
+									/>
+								</Col>
+								<Col>
 								<p>
-									<span>
-										<FaCalendarDay />
-									</span>
-									{' '}
-									{image.date}
+									{image.explanation}
 								</p>
-					
-							<p>
-								{image.explanation}
-							</p>
-                  
+										
+								<p>
+								<span>
+											<FaCalendarDay />
+										</span>
+										{' '}
+										{image.date}, copyright:{' '} {image.copyright}
+								</p>
+								</Col>
+
+							</Row>		
             </Container>
           </>
         )}

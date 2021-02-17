@@ -9,7 +9,7 @@ import {
   NavLink,
 } from "react-router-dom";
 import Home from "../pages/Home";
-import Missions from "../pages/Missions";
+import Telescopes from "../pages/Telescopes";
 import Programs from "../pages/Programs";
 import LiveFeeds from "../pages/LiveFeeds";
 import Events from "../pages/Events";
@@ -67,7 +67,7 @@ function Navigation() {
       </Navbar>
       <Switch>
         <Route path={["/", "/home"]} exact component={Home} />
-        <Route path="/missions" component={Missions} />
+        <Route path="/missions" component={Telescopes} />
         <Route path="/programs" component={Programs} />
         <Route path="/livefeeds" component={LiveFeeds} />
         <Route path="/events" component={Events} />
