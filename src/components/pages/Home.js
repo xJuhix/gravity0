@@ -80,7 +80,10 @@ export function Home() {
             </Button>
           </Link>
         </div>
-        <APOD />
+
+        <div className="NASA-Image">
+          <APOD />
+        </div>
       </div>
     </>
   );

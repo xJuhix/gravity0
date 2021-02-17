@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Container from "react-bootstrap/Container";
 import Heading from "../layout/Heading";
 
 export function InternationalSpaceStation() {
@@ -13,9 +15,15 @@ export function InternationalSpaceStation() {
         <title>International Space Station</title>
         <meta name="description" content="The International Space Station." />
       </Helmet>
+
+      <Jumbotron>
+        <Container>
+          <Heading title="International Space Sation" />
+        </Container>
+      </Jumbotron>
+
       <div className="iss">
         <Col>
-          <Heading title="International Space Sation" />
           <Row>
             <Col md={6}>
               <p>

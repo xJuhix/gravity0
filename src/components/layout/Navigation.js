@@ -15,7 +15,7 @@ import Programs from "../pages/Programs";
 import LiveFeeds from "../pages/LiveFeeds";
 import Events from "../pages/Events";
 import Iss from "../programs/Iss";
-import { Mars } from "../programs/Mars";
+import Mars from "../programs/Mars";
 import MoontoMars from "../programs/MoonToMars";
 import Search from "../pages/Search";
 import logo from "../../images/logo.png";
@@ -55,24 +55,8 @@ function Navigation() {
                 Moon to Mars
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown
-              title="Live Feeds"
-              to="/livefeeds"
-              className="nav__link"
-              id="collasible-nav-dropdown"
-            >
-              <NavDropdown.Item to="/space" className="dropdown__item">
-                Space
-              </NavDropdown.Item>
-              <NavDropdown.Item to="/telescope" className="dropdown__item">
-                Telescope
-              </NavDropdown.Item>
-            </NavDropdown>
             <NavLink to="/event" className="nav__link">
               Events
-            </NavLink>
-            <NavLink to="/search" className="nav__link">
-              Search
             </NavLink>
           </Nav>
         </Navbar.Collapse>
@@ -82,8 +66,8 @@ function Navigation() {
         <Route path="/telescopes" component={Telescopes} />
         <Route path="/porgrams" component={Programs} />
         <Route path="/iss" component={Iss} />
-        <Route path="/programs" component={Mars} />
-        <Route path="/programs" component={MoontoMars} />
+        <Route path="/mars" component={Mars} />
+        <Route path="/moontomars" component={MoontoMars} />
         <Route path="/livefeeds" component={LiveFeeds} />
         <Route path="/events" component={Events} />
         <Route path="/search" component={Search} />
