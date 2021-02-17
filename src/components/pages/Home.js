@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { Helmet } from "react-helmet";
@@ -47,15 +48,9 @@ export function Home() {
         </Row>
 
         <div className="explore__buttons">
-          <a href="https://eyes.nasa.gov/curiosity/">
+          <a target="_blank" href="https://eyes.nasa.gov/curiosity/">
             <Button variant="explore" size="lg">
               See Mars through Curiosity's Eyes
-            </Button>
-          </a>
-
-          <a href="http://spacetelescopelive.org">
-            <Button variant="explore" size="lg">
-              What is Hubble looking at now ?
             </Button>
           </a>
 
@@ -64,12 +59,18 @@ export function Home() {
               Find out who is in space right now
             </Button>
           </Link>
+
+          <a target="_blank" href="http://spacetelescopelive.org">
+            <Button variant="explore" size="lg">
+              What is Hubble looking at now ?
+            </Button>
+          </a>
         </div>
 
         <div className="explore__buttons">
           <Link to="/marsrover/">
             <Button variant="explore" size="lg">
-              What is James Webb seeing
+              James Webb 2021
             </Button>
           </Link>
 

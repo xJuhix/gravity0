@@ -42,13 +42,13 @@ function Navigation() {
               className="nav__link"
               id="collasible-nav-dropdown"
             >
-              <NavDropdown.Item href="#action/3.1" className="dropdown__item">
+              <NavDropdown.Item to="/iss" className="dropdown__item">
                 ISS
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2" className="dropdown__item">
+              <NavDropdown.Item to="/mars" className="dropdown__item">
                 Mars
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3" className="dropdown__item">
+              <NavDropdown.Item to="/moontomars" className="dropdown__item">
                 Moon to Mars
               </NavDropdown.Item>
             </NavDropdown>
@@ -58,10 +58,10 @@ function Navigation() {
               className="nav__link"
               id="collasible-nav-dropdown"
             >
-              <NavDropdown.Item href="#action/3.1" className="dropdown__item">
+              <NavDropdown.Item to="/space" className="dropdown__item">
                 Space
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2" className="dropdown__item">
+              <NavDropdown.Item to="/telescope" className="dropdown__item">
                 Telescope
               </NavDropdown.Item>
             </NavDropdown>
