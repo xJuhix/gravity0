@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React from "react";
 import {
-	FaEnvelope,
+  FaEnvelope,
   FaYoutube,
   FaInstagram,
   FaFacebook,
   FaTwitter,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 function Footer() {
   return (
@@ -17,7 +17,8 @@ function Footer() {
             <p>&copy; 2020 Gravity0</p>
           </div>
           <div className="footer__links">
-					<a href= "#"
+            <a
+              href="#"
               aria-label="Mail to Juhi saigal"
               className="footer__socialmedia-icon"
             >

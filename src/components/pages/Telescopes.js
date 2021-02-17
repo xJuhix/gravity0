@@ -1,9 +1,8 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Heading from '../layout/Heading';
-
+import React from "react";
+import { Helmet } from "react-helmet";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Heading from "../layout/Heading";
 
 export function Books() {
   return (
@@ -21,8 +20,8 @@ export function Books() {
             <Heading title="Hubble" />
           </Col>
           <Col>
-					<Heading title="James Webb" />
-					</Col>
+            <Heading title="James Webb" />
+          </Col>
         </Row>
       </div>
     </>

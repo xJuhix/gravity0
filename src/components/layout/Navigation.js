@@ -1,4 +1,5 @@
-import React from 'react';
+/* eslint-disable import/no-named-as-default */
+import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -32,30 +33,38 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto nav__item">
-					<NavLink to="/event" className="nav__link">
+            <NavLink to="/telescopes" className="nav__link">
               Telescopes
             </NavLink>
-          <NavDropdown
-						title="Programs"
-						to="/programs"
-						className="nav__link"
-						id="collasible-nav-dropdown"
-					>
-						<NavDropdown.Item href="#action/3.1" className="dropdown__item">ISS</NavDropdown.Item>
-						<NavDropdown.Item href="#action/3.2" className="dropdown__item">Mars</NavDropdown.Item>
-						<NavDropdown.Item href="#action/3.3" className="dropdown__item">
-							Moon to Mars
-						</NavDropdown.Item>
-          </NavDropdown>
-					<NavDropdown
-						title="Live Feeds"
-						to="/livefeeds"
-						className="nav__link"
-						id="collasible-nav-dropdown"
-					>
-						<NavDropdown.Item href="#action/3.1" className="dropdown__item">Space</NavDropdown.Item>
-						<NavDropdown.Item href="#action/3.2" className="dropdown__item">Telescope</NavDropdown.Item>
-					</NavDropdown>
+            <NavDropdown
+              title="Programs"
+              to="/programs"
+              className="nav__link"
+              id="collasible-nav-dropdown"
+            >
+              <NavDropdown.Item href="#action/3.1" className="dropdown__item">
+                ISS
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2" className="dropdown__item">
+                Mars
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3" className="dropdown__item">
+                Moon to Mars
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown
+              title="Live Feeds"
+              to="/livefeeds"
+              className="nav__link"
+              id="collasible-nav-dropdown"
+            >
+              <NavDropdown.Item href="#action/3.1" className="dropdown__item">
+                Space
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2" className="dropdown__item">
+                Telescope
+              </NavDropdown.Item>
+            </NavDropdown>
             <NavLink to="/event" className="nav__link">
               Events
             </NavLink>
