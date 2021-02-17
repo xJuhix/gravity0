@@ -7,7 +7,7 @@ import Image from "react-bootstrap/Image";
 import { FaCalendarDay } from "react-icons/fa";
 import Spinner from "react-bootstrap/Spinner";
 import Alert from "react-bootstrap/Alert";
-import { BASE_URL } from "../../constants/api";
+import { APOD } from "../../constants/api";
 import Heading from "../layout/Heading";
 
 function NasaDailyImage() {
@@ -16,7 +16,7 @@ function NasaDailyImage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(BASE_URL)
+    fetch(APOD)
       .then((response) => response.json())
       .then((json) => {
         setImage(json);

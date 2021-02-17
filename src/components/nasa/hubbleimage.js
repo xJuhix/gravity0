@@ -1,32 +1,34 @@
 /* eslint-disable no-console */
 import React, { useState, useEffect } from "react";
-import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
-import { FaCalendarDay } from "react-icons/fa";
 import Spinner from "react-bootstrap/Spinner";
 import Alert from "react-bootstrap/Alert";
-import { BASE_URL } from "../../constants/api";
-import Heading from "../layout/Heading";
+import { useParams } from "react-router-dom";
+import { HUBBLE } from "../../constants/api";
 
-function NasaDailyImage() {
-  const [image, setImage] = useState(null);
+function HubbleImage() {
+  const [hubble, setHubble] = useState(null);
   const [hasError, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
+  const { id } = useParams();
+
+  const url = `${HUBBLE}/${id}`;
+
   useEffect(() => {
-    fetch(BASE_URL)
+    fetch(url)
       .then((response) => response.json())
       .then((json) => {
-        setImage(json);
+        setHubble(json);
         console.log(json);
       })
       .catch((error) => {
         setError(error);
       })
       .finally(() => setLoading(false));
-  }, []);
+  }, [url]);
 
   if (hasError) {
     return <Alert variant="warning" className="erroralert" />;
@@ -43,27 +45,21 @@ function NasaDailyImage() {
   }
   return (
     <>
-      <div className="image">
-        {image && (
+      <div className="hubble-image">
+        {hubble && (
           <>
-            <Container>
-              <Heading title={image.title} />
-              <Row>
+            <div>
+              <Container>
+                <h3 className="hubble__name">{hubble.name}</h3>
                 <Col>
-                  <Image src={image.url} width="100%" className="Nasa-APOD" />
+                  <Image
+                    src={hubble.image_file.file_url}
+                    width="100%"
+                    className="hubble-img"
+                  />
                 </Col>
-                <Col>
-                  <p>{image.explanation}</p>
-
-                  <p>
-                    <span>
-                      <FaCalendarDay />
-                    </span>{" "}
-                    {image.date}, copyright: {image.copyright}
-                  </p>
-                </Col>
-              </Row>
-            </Container>
+              </Container>
+            </div>
           </>
         )}
       </div>
@@ -71,4 +67,4 @@ function NasaDailyImage() {
   );
 }
 
-export default NasaDailyImage;
+export default HubbleImage;

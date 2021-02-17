@@ -4,8 +4,9 @@ import { Helmet } from "react-helmet";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Heading from "../layout/Heading";
+import HubbleImage from "../nasa/hubbleimage";
 
-export function Books() {
+export function Telescopes() {
   return (
     <>
       <Helmet>
@@ -45,7 +46,10 @@ export function Books() {
                 Source: Hubble Site, NASA
               </a>
             </Col>
-            <Col>img from hubbs</Col>
+            <Col>
+              {" "}
+              <HubbleImage />{" "}
+            </Col>
           </Row>
           <Heading title="James Webb" />
           <Row>
@@ -90,4 +94,4 @@ export function Books() {
   );
 }
 
-export default Books;
+export default Telescopes;

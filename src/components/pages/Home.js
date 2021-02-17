@@ -54,7 +54,7 @@ export function Home() {
             </Button>
           </a>
 
-          <Link to="/iss/">
+          <Link to="/iss">
             <Button variant="explore" size="lg">
               Find out who is in space right now
             </Button>
