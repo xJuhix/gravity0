@@ -28,15 +28,12 @@ export function Home() {
               <Heading title="Gravity0" />
               <h2>Microsite for NASA</h2>
               <p>
-                Here you will find NASA's active and upcoming missions and
-                programs, the technology that is being devloped for the mission
-                and programs is revolutionary. NASA has over the years devloped
-                partnerships with other space agencies both private and
-                government owned. So we as a world have come together to explore
-                the endless unknown. The purpose of GravityZero is to infrom the
-                public about NASA's currently active space programs and missions
-                as well as upcoming ones. We would like to share our knowledge
-                about NASA's international collaborations.
+                Here you will find NASA's telescopes, as well as, active and
+                upcoming programs. Alone NASA can only do so much, so over the
+                years NASA has devloped realtionships with other space agenices
+                and together they will explore the endless unknown. The purpose
+                of GravityZero is to infrom the public about active space
+                programs and missions as well as upcoming ones.
               </p>
 
               <blockquote className="page__blockquote">

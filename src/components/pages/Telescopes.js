@@ -3,6 +3,8 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Container from "react-bootstrap/Container";
 import Heading from "../layout/Heading";
 import HubbleImage from "../nasa/hubbleimage";
 
@@ -16,6 +18,13 @@ export function Telescopes() {
           content="WittigNotes Books page, here you will find book recomentdation, book reviews and my book bag."
         />
       </Helmet>
+
+      <Jumbotron>
+        <Container>
+          <Heading title="Telecopes" />
+        </Container>
+      </Jumbotron>
+
       <div className="telescopes">
         <Col>
           <Heading title="Hubble" />
