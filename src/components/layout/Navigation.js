@@ -2,7 +2,6 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,7 +11,6 @@ import {
 import Home from "../pages/Home";
 import Telescopes from "../pages/Telescopes";
 import Programs from "../pages/Programs";
-import LiveFeeds from "../pages/LiveFeeds";
 import Events from "../pages/Events";
 import Iss from "../programs/Iss";
 import Mars from "../programs/Mars";
@@ -39,23 +37,16 @@ function Navigation() {
             <NavLink to="/telescopes" className="nav__link">
               Telescopes
             </NavLink>
-            <NavDropdown
-              title="Programs"
-              to="/programs"
-              className="nav__link"
-              id="collasible-nav-dropdown"
-            >
-              <NavDropdown.Item href="/iss" className="dropdown__item">
-                ISS
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/mars" className="dropdown__item">
-                Mars
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/moontomars" className="dropdown__item">
-                Moon to Mars
-              </NavDropdown.Item>
-            </NavDropdown>
-            <NavLink to="/event" className="nav__link">
+            <NavLink to="/iss" className="nav__link">
+              ISS
+            </NavLink>
+            <NavLink to="/mars" className="nav__link">
+              Mars
+            </NavLink>
+            <NavLink to="/moontomars" className="nav__link">
+              Moon to Mars
+            </NavLink>
+            <NavLink to="/events" className="nav__link">
               Events
             </NavLink>
           </Nav>
@@ -68,7 +59,6 @@ function Navigation() {
         <Route path="/iss" component={Iss} />
         <Route path="/mars" component={Mars} />
         <Route path="/moontomars" component={MoontoMars} />
-        <Route path="/livefeeds" component={LiveFeeds} />
         <Route path="/events" component={Events} />
         <Route path="/search" component={Search} />
       </Switch>

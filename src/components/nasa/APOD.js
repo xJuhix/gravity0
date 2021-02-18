@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import { FaCalendarDay } from "react-icons/fa";
 import Spinner from "react-bootstrap/Spinner";
@@ -46,24 +45,21 @@ function NasaDailyImage() {
       <div className="image">
         {image && (
           <>
-            <Container>
-              <Heading title={image.title} />
-              <Row>
-                <Col>
-                  <Image src={image.url} width="100%" className="Nasa-APOD" />
-                </Col>
-                <Col>
-                  <p>{image.explanation}</p>
-
-                  <p>
-                    <span>
-                      <FaCalendarDay />
-                    </span>{" "}
-                    {image.date}, copyright: {image.copyright}
-                  </p>
-                </Col>
-              </Row>
-            </Container>
+            <Heading title={image.title} />
+            <Row>
+              <Col md={5}>
+                <Image src={image.url} width="100%" className="Nasa-APOD" />
+              </Col>
+              <Col md={7}>
+                <p>{image.explanation}</p>
+                <p>
+                  <span>
+                    <FaCalendarDay />
+                  </span>{" "}
+                  {image.date}, Copyright: {image.copyright}
+                </p>
+              </Col>
+            </Row>
           </>
         )}
       </div>

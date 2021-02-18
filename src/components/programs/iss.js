@@ -43,7 +43,7 @@ export function InternationalSpaceStation() {
                 Source: NASA
               </a>
             </Col>
-            <Col md={3}>
+            <Col>
               <h3>Who is space right now </h3>
             </Col>
           </Row>
@@ -60,7 +60,7 @@ export function InternationalSpaceStation() {
               </p>
             </Col>
             <Col>
-              <p>News from ISS</p>
+              <h3>Where is the Space Station right now </h3>
             </Col>
           </Row>
           <Carousel>
