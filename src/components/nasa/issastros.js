@@ -2,18 +2,18 @@
 import React, { useState, useEffect } from "react";
 import Spinner from "react-bootstrap/Spinner";
 import Alert from "react-bootstrap/Alert";
-import { ISS_LOCATION } from "../../constants/api";
+import { ISS_ASTROS } from "../../constants/api";
 
-function IssLocation() {
-  const [iss, setIss] = useState(null);
+function IssAstros() {
+  const [astros, setAstros] = useState(null);
   const [hasError, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(ISS_LOCATION)
+    fetch(ISS_ASTROS)
       .then((response) => response.json())
       .then((json) => {
-        setIss(json);
+        setAstros(json);
         console.log(json);
       })
       .catch((error) => {
@@ -38,10 +38,10 @@ function IssLocation() {
   return (
     <>
       <div className="image">
-        {iss && (
+        {astros && (
           <>
-            <p>Latitude: {iss.iss_position.latitude}</p>
-            <p>Logitude: {iss.iss_position.longitude}</p>
+            <p>Number: {astros.number}</p>
+            <p>Who: {astros.people.name}</p>
           </>
         )}
       </div>
@@ -49,4 +49,4 @@ function IssLocation() {
   );
 }
 
-export default IssLocation;
+export default IssAstros;
