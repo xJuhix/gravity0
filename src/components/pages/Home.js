@@ -65,11 +65,11 @@ export function Home() {
         </div>
 
         <div className="explore__buttons">
-          <Link to="/marsrover/">
+          <a target="_blank" href="https://youtu.be/6VqG3Jazrfs">
             <Button variant="explore" size="lg">
               James Webb 2021
             </Button>
-          </Link>
+          </a>
 
           <Link to="/marsrover/">
             <Button variant="explore" size="lg">

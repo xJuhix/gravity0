@@ -138,8 +138,7 @@ export function Telescopes() {
               </a>
             </Col>
             <Col>
-              {" "}
-              <HubbleImage />{" "}
+              <p>Chandra Image</p>
             </Col>
           </Row>
           <h2>Spitzer Space Telescope</h2>
@@ -179,8 +178,7 @@ export function Telescopes() {
               </a>
             </Col>
             <Col>
-              {" "}
-              <HubbleImage />{" "}
+              <p>Spiter Image</p>
             </Col>
           </Row>
           <h2>Compton Gamma Ray Observatory</h2>
@@ -220,8 +218,7 @@ export function Telescopes() {
               </a>
             </Col>
             <Col>
-              {" "}
-              <HubbleImage />{" "}
+              <p>CGR Image </p>
             </Col>
           </Row>
         </Col>

@@ -9,6 +9,8 @@ import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Carousel from "react-bootstrap/Carousel";
 import Heading from "../layout/Heading";
+import Curiosity from "../../images/Curiosity.jpg";
+import ExoMars from "../../images/exomars.jpg";
 
 export function InternationalSpaceStation() {
   return (
@@ -59,7 +61,12 @@ export function InternationalSpaceStation() {
           <h2>Meet</h2>
           <Row>
             <Card className="card">
-              <Card.Img className="card__image" variant="top" />
+              <Card.Img
+                className="card__image"
+                variant="top"
+                src={Curiosity}
+                alt="Curiosity Rover"
+              />
               <Card.Body>
                 <Card.Title className="card__title">Curiosity</Card.Title>
                 <Card.Text>
@@ -82,7 +89,12 @@ export function InternationalSpaceStation() {
             </Card>
 
             <Card className="card">
-              <Card.Img className="card__image" variant="top" />
+              <Card.Img
+                className="card__image"
+                variant="top"
+                src={ExoMars}
+                alt="Curiosity Rover"
+              />
               <Card.Body>
                 <Card.Title className="card__title">ExoMars</Card.Title>
                 <Card.Text>

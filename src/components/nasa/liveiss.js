@@ -37,7 +37,7 @@ function IssLocation() {
   }
   return (
     <>
-      <div className="image">
+      <div className="live__iss">
         {iss && (
           <>
             <p>Latitude: {iss.iss_position.latitude}</p>

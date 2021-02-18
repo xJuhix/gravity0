@@ -37,11 +37,16 @@ function IssAstros() {
   }
   return (
     <>
-      <div className="image">
+      <div className="live__iss">
         {astros && (
           <>
             <p>Number: {astros.number}</p>
-            <p>Who: {astros.people.name}</p>
+            <p>
+              Who
+              {astros.map((astronauts) => (
+                <p name={astronauts.people.name} />
+              ))}
+            </p>
           </>
         )}
       </div>
