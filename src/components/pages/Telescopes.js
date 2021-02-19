@@ -8,6 +8,9 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import Heading from "../layout/Heading";
 import HubbleImage from "../telescopes/hubbleimage";
+import Spitzer from "../../images/spitzer.jpg";
+import Chandra from "../../images/Chandra.jpg";
+import CGRO from "../../images/CGRO.jpg";
 import TelescopeCarousel from "../carousels/TelescopeCarousel";
 
 export function Telescopes() {
@@ -54,7 +57,7 @@ export function Telescopes() {
             </Col>
             <Col>
               <iframe
-                width="650"
+                width="850"
                 height="500"
                 src="https://www.youtube.com/embed/6VqG3Jazrfs"
                 frameBorder="0"
@@ -138,7 +141,11 @@ export function Telescopes() {
               </a>
             </Col>
             <Col>
-              <p>Chandra Image</p>
+              <img
+                className="d-block w-100 telescope-image"
+                src={Chandra}
+                alt="Chandra X-ray Observatory"
+              />
             </Col>
           </Row>
           <h2>Spitzer Space Telescope</h2>
@@ -178,7 +185,11 @@ export function Telescopes() {
               </a>
             </Col>
             <Col>
-              <p>Spiter Image</p>
+              <img
+                className="d-block w-100 telescope-image"
+                src={Spitzer}
+                alt="Spitzer Telescope"
+              />
             </Col>
           </Row>
           <h2>Compton Gamma Ray Observatory</h2>
@@ -200,7 +211,7 @@ export function Telescopes() {
                 Source: CGRO Site, NASA
               </a>
               <p>
-                The Compton Gamma Ray Observatory (GRO) is a sophisticated
+                The Compton Gamma Ray Observatory (CGRO) is a sophisticated
                 satellite observatory dedicated to observing the high-energy
                 Universe. It is the second in NASA's program of orbiting "Great
                 Observatories", following the Hubble Space Telescope. While
@@ -218,7 +229,11 @@ export function Telescopes() {
               </a>
             </Col>
             <Col>
-              <p>CGR Image </p>
+              <img
+                className="d-block w-100 telescope-image"
+                src={CGRO}
+                alt="Compton Gamma Ray Observatory"
+              />
             </Col>
           </Row>
         </Col>

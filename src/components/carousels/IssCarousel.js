@@ -1,44 +1,83 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import PersianGulf from "../../images/persiangulf.jpg";
+import Iss from "../../images/issartist.jpg";
+import IssEarth from "../../images/issoverearth.jpg";
+import IssMoon from "../../images/moonfromiss.jpg";
+import IssNiel from "../../images/nielbyiss.jpg";
+import IssAurora from "../../images/auroraboralis.jpg";
 
 function IssCarousel() {
   return (
     <Carousel>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
-          alt="First slide"
+          className="d-block w-100 carousel-image"
+          src={Iss}
+          alt="International Space Station"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>International Space Station</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
-          alt="Second slide"
+          className="d-block w-100 carousel-image"
+          src={IssEarth}
+          alt="The Internaltion Space Station floating over Earth "
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Internaltion Space Station over Earth</h3>{" "}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
+          className="d-block w-100 carousel-image"
+          src={PersianGulf}
+          alt="The northern coast of the Persian Gulf"
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>
+            The northern coast of the Persian Gulf seen from the Internaltion
+            Space Station{" "}
+          </h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 carousel-image"
+          src={IssMoon}
+          alt="Moon seen from the Internaltion Space Station"
+        />
+
+        <Carousel.Caption>
+          <h3>Moon seen from the Internaltion Space Station</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 carousel-image"
+          src={IssNiel}
+          alt="River Neil seen from the Internaltion Space Station"
+        />
+
+        <Carousel.Caption>
+          <h3>River Neil seen from the Internaltion Space Station</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100 carousel-image"
+          src={IssAurora}
+          alt="Auroraboralis on Earth seen from the Internaltion Space Station"
+        />
+
+        <Carousel.Caption>
+          <h3>
+            Auroraboralis on Earth seen from the Internaltion Space Station
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
