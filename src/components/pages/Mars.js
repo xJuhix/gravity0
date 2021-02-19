@@ -9,6 +9,7 @@ import Container from "react-bootstrap/Container";
 import Heading from "../layout/Heading";
 import RoverTabs from "../mars/RoverTabs";
 import RoverAccordian from "../mars/RoverAccordian";
+import MarsCarousel from "../carousels/MarsCarousel";
 
 export function Mars() {
   return (
@@ -58,7 +59,6 @@ export function Mars() {
           <h2>How are we exploring Mars</h2>
           <div className="marsprogram__rovers">
             <Container>
-              <h3>Meet</h3>
               <div className="d-md-none rover-accordian">
                 <RoverAccordian />
               </div>
@@ -71,6 +71,7 @@ export function Mars() {
             <p>Add mars image carousel</p>
           </div>
         </Col>
+        <MarsCarousel />
       </div>
     </>
   );

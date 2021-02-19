@@ -4,8 +4,9 @@ import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import Curiosity from "../../images/Curiosity.jpg";
+import Curiosity from "../../images/curiosity.jpg";
 import ExoMars from "../../images/exomars.jpg";
+import Preseverance from "../../images/preseverance.jpg";
 
 function RoverAccordian() {
   return (
@@ -19,7 +20,7 @@ function RoverAccordian() {
         <Accordion.Collapse eventKey="0">
           <Card.Body>
             <Card.Img
-              className="card__image"
+              className="rover-image"
               variant="top"
               src={Curiosity}
               alt="Curiosity Rover"
@@ -37,8 +38,10 @@ function RoverAccordian() {
                 mineral evidence of past habitable environments on Mars. It
                 continues to explore the rock record from a time when Mars could
                 have been home to microbial life.
-                <br /> Curiosity: Launched on 26th of November 2011 and arrived
-                on 6th of August 2012.
+                <p>
+                  Curiosity: Launched on 26th of November 2011 and arrived on
+                  6th of August 2012.
+                </p>
               </p>
               <a target="_blank" href="https://mars.nasa.gov/msl/home/">
                 {" "}
@@ -62,7 +65,7 @@ function RoverAccordian() {
         <Accordion.Collapse eventKey="1">
           <Card.Body>
             <Card.Img
-              className="card__image"
+              className="rover-image"
               variant="top"
               src={ExoMars}
               alt="Exomars Rover"
@@ -73,8 +76,10 @@ function RoverAccordian() {
               a rover and surface platform, is planned for 2022. Together they
               will address the question of whether life has ever existed on
               Mars.
-              <br /> ExoMars 2016: Launched on March 14th 2016 and arrived on
-              Mars October 19th 2016.
+              <p>
+                ExoMars 2016: Launched on March 14th 2016 and arrived on Mars
+                October 19th 2016.
+              </p>
               <a target="_blank" href="http://www.esa.int">
                 {" "}
                 Source: ESA
@@ -100,9 +105,9 @@ function RoverAccordian() {
         <Accordion.Collapse eventKey="2">
           <Card.Body>
             <Card.Img
-              className="card__image"
+              className=".rover-image"
               variant="top"
-              src={ExoMars}
+              src={Preseverance}
               alt="Curiosity Rover"
             />
             <Card.Text>
@@ -119,8 +124,10 @@ function RoverAccordian() {
                 journey to Mars is a technology demonstration — the Mars
                 Helicopter, Ingenuity, may achieve a "Wright Brothers moment “
                 by testing the first powered flight on the Red Planet.
-                <br /> Preseverance: Launched on July 30th 2020 and arrived on
-                Mars March 18th 2021.
+                <p>
+                  Preseverance: Launched on July 30th 2020 and arrived on Mars
+                  March 18th 2021.
+                </p>
               </p>
               <a
                 target="_blank"

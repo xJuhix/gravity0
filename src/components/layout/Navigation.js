@@ -10,12 +10,10 @@ import {
 } from "react-router-dom";
 import Home from "../pages/Home";
 import Telescopes from "../pages/Telescopes";
-import Programs from "../pages/Programs";
 import Events from "../pages/Events";
 import Iss from "../pages/Iss";
 import Mars from "../pages/Mars";
 import MoontoMars from "../pages/MoonToMars";
-import Search from "../pages/Search";
 import logo from "../../images/logo.png";
 
 function Navigation() {
@@ -55,12 +53,10 @@ function Navigation() {
       <Switch>
         <Route path={["/", "/home"]} exact component={Home} />
         <Route path="/telescopes" component={Telescopes} />
-        <Route path="/porgrams" component={Programs} />
         <Route path="/iss" component={Iss} />
         <Route path="/mars" component={Mars} />
         <Route path="/moontomars" component={MoontoMars} />
         <Route path="/events" component={Events} />
-        <Route path="/search" component={Search} />
       </Switch>
     </Router>
   );

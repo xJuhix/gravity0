@@ -7,8 +7,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
-import Curiosity from "../../images/Curiosity.jpg";
+import Curiosity from "../../images/curiosity.jpg";
 import ExoMars from "../../images/exomars.jpg";
+import Preseverance from "../../images/preseverance.jpg";
 
 function RoverTabs() {
   return (
@@ -23,7 +24,7 @@ function RoverTabs() {
             />
           </Col>
           <Col className="col-12 col-md-8">
-            <h3 className="d-sm-none d-md-block">About Curiosity</h3>
+            <h3 className="d-sm-none d-md-block">Meet Curiosity</h3>
             <p>
               Part of NASA's Mars Science Laboratory mission, Curiosity is the
               largest and most capable rover ever sent to Mars. It launched
@@ -60,7 +61,7 @@ function RoverTabs() {
             />
           </Col>
           <Col className="col-12 col-md-8">
-            <h3 className="d-sm-none d-md-block">About ExoMars</h3>
+            <h3 className="d-sm-none d-md-block">Meet ExoMars</h3>
             <p>
               The ExoMars programme comprises two missions: the first – the
               Trace Gas Orbiter – launched in 2016 while the second, comprising
@@ -92,13 +93,13 @@ function RoverTabs() {
         <Row>
           <Col className="col-12 col-md-4 d-md-block">
             <Image
-              src={Curiosity}
+              src={Preseverance}
               className="rover-image"
               alt="Mars Precerverance Rover"
             />
           </Col>
           <Col className="col-12 col-md-8">
-            <h3 className="d-sm-none d-md-block">About Preseverance</h3>
+            <h3 className="d-sm-none d-md-block">Meet Preseverance</h3>
             <p>
               The Mars 2020 Perseverance Rover will search for signs of ancient
               microbial life, which will advance NASA's quest to explore the
