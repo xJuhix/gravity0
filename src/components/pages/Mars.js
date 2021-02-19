@@ -9,8 +9,6 @@ import Container from "react-bootstrap/Container";
 import Heading from "../layout/Heading";
 import RoverTabs from "../mars/RoverTabs";
 import RoverAccordian from "../mars/RoverAccordian";
-// import Curiosity from "../../images/Curiosity.jpg";
-// import ExoMars from "../../images/exomars.jpg";
 
 export function Mars() {
   return (
@@ -41,7 +39,7 @@ export function Mars() {
                 Mars by humans, and how Mars compares to and contrasts with
                 Earth.
               </p>
-              <a target="_blank" href="https://www.jwst.nasa.gov">
+              <a target="_blank" href="https://mars.nasa.gov/">
                 {" "}
                 Source: NASA
               </a>
@@ -79,86 +77,3 @@ export function Mars() {
 }
 
 export default Mars;
-
-/* <Card className="card">
-              <Card.Img
-                className="card__image"
-                variant="top"
-                src={Curiosity}
-                alt="Curiosity Rover"
-              />
-              <Card.Body>
-                <Card.Title className="card__title">Curiosity</Card.Title>
-                <Card.Text>
-                  Bla Bla Bla
-                  <a target="_blank" href="https://www.jwst.nasa.gov">
-                    {" "}
-                    Source: NASA
-                  </a>
-                </Card.Text>
-                <a target="_blank" href="https://mars.nasa.gov/msl/home/">
-                  <Button
-                    variant="submit"
-                    block
-                    className="button mt-auto btn-lg "
-                  >
-                    Learn More
-                  </Button>
-                </a>
-              </Card.Body>
-            </Card>
-
-            <Card className="card">
-              <Card.Img
-                className="card__image"
-                variant="top"
-                src={ExoMars}
-                alt="Curiosity Rover"
-              />
-              <Card.Body>
-                <Card.Title className="card__title">ExoMars</Card.Title>
-                <Card.Text>
-                  Bla Bla Bla{" "}
-                  <a target="_blank" href="http://www.esa.int">
-                    {" "}
-                    Source: ESA
-                  </a>
-                </Card.Text>
-                <a
-                  target="_blank"
-                  href="http://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/ExoMars"
-                >
-                  <Button
-                    variant="submit"
-                    block
-                    className="button mt-auto btn-lg "
-                  >
-                    Learn More
-                  </Button>
-                </a>
-              </Card.Body>
-            </Card>
-
-            <Card className="card">
-              <Card.Img className="card__image" variant="top" />
-              <Card.Body>
-                <Card.Title className="card__title">Perseverance</Card.Title>
-                <Card.Text>
-                  Bla Bla Bla
-                  <a target="_blank" href="https://www.jwst.nasa.gov">
-                    {" "}
-                    Source: NASA
-                  </a>
-                </Card.Text>
-                <a target="_blank" href="https://mars.nasa.gov/mars2020/">
-                  <Button
-                    variant="submit"
-                    block
-                    className="button mt-auto btn-lg "
-                  >
-                    Learn More
-                  </Button>
-                </a>
-              </Card.Body>
-            </Card>
-        */
