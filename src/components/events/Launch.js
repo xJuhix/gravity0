@@ -1,6 +1,8 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
+/* eslint-disable react/prop-types */
 import React, { useState, useEffect } from "react";
 
-function Launch (props) {
+function Launch(props) {
   const [timer, setTimer] = useState({
     days: 0,
     hours: 0,
@@ -21,8 +23,9 @@ function Launch (props) {
   }, []);
   return (
     <div className="launch">
-      <div
+      <img
         className="d-block launch-image"
+        alt="Launch image of rocket"
         style={{ backgroundImage: `url(${launch.image})` }}
       />
       <div className="launch-info">

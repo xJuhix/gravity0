@@ -7,6 +7,7 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import Heading from "../layout/Heading";
 import LiveISS from "../iss/liveiss";
+import ISSAstros from "../iss/issastros";
 import IssCarousel from "../carousels/IssCarousel";
 
 export function InternationalSpaceStation() {
@@ -46,6 +47,7 @@ export function InternationalSpaceStation() {
             </Col>
             <Col>
               <h3>Who is space right now </h3>
+              <ISSAstros />
             </Col>
           </Row>
           <Row>

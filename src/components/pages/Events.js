@@ -48,7 +48,7 @@ export function InternationalSpaceStation() {
                   <>
                     {events.map((event) => (
                       <div className="event" key={event.name}>
-                        <img src={`${event.feature_image}`} />
+                        <img alt="" src={`${event.feature_image}`} />
                         <div className="event-info">
                           <div className="event-minor">
                             <span>{event.type.name}</span>
