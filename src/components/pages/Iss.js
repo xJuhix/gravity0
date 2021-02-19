@@ -7,8 +7,8 @@ import Carousel from "react-bootstrap/Carousel";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import Heading from "../layout/Heading";
-import LiveISS from "../nasa/liveiss";
-import IssAstros from "../nasa/issastros";
+import LiveISS from "../iss/liveiss";
+import IssAstros from "../iss/issastros";
 
 export function InternationalSpaceStation() {
   return (

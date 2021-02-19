@@ -8,7 +8,7 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Carousel from "react-bootstrap/Carousel";
 import Container from "react-bootstrap/Container";
 import Heading from "../layout/Heading";
-import HubbleImage from "../nasa/hubbleimage";
+import HubbleImage from "../telescopes/hubbleimage";
 
 export function Telescopes() {
   return (

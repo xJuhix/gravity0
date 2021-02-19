@@ -1,18 +1,18 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import { Helmet } from "react-helmet";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Carousel from "react-bootstrap/Carousel";
 import Heading from "../layout/Heading";
-import Curiosity from "../../images/Curiosity.jpg";
-import ExoMars from "../../images/exomars.jpg";
+import RoverTabs from "../mars/RoverTabs";
+import RoverAccordian from "../mars/RoverAccordian";
+// import Curiosity from "../../images/Curiosity.jpg";
+// import ExoMars from "../../images/exomars.jpg";
 
-export function InternationalSpaceStation() {
+export function Mars() {
   return (
     <>
       <Helmet>
@@ -26,10 +26,10 @@ export function InternationalSpaceStation() {
         </Container>
       </Jumbotron>
 
-      <div className="Mars">
+      <div className="marsprogram">
         <Col>
           <Row>
-            <Col>
+            <Col className="marsprogram__about">
               <h2>About the Program</h2>
               <p>
                 NASA’s Mars Exploration Program is a science-driven,
@@ -58,9 +58,29 @@ export function InternationalSpaceStation() {
             </Col>
           </Row>
           <h2>How are we exploring Mars</h2>
-          <h2>Meet</h2>
-          <Row>
-            <Card className="card">
+          <div className="marsprogram__rovers">
+            <Container>
+              <h3>Meet</h3>
+              <div className="d-md-none rover-accordian">
+                <RoverAccordian />
+              </div>
+              <div className="d-none d-md-block rover-tabs">
+                <RoverTabs />
+              </div>
+            </Container>
+          </div>
+          <div className="marsporgram__images">
+            <p>Add mars image carousel</p>
+          </div>
+        </Col>
+      </div>
+    </>
+  );
+}
+
+export default Mars;
+
+/* <Card className="card">
               <Card.Img
                 className="card__image"
                 variant="top"
@@ -141,53 +161,4 @@ export function InternationalSpaceStation() {
                 </a>
               </Card.Body>
             </Card>
-          </Row>
-          <Carousel>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="holder.js/800x400?text=First slide&bg=373940"
-                alt="First slide"
-              />
-              <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="holder.js/800x400?text=Second slide&bg=282c34"
-                alt="Second slide"
-              />
-
-              <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="holder.js/800x400?text=Third slide&bg=20232a"
-                alt="Third slide"
-              />
-
-              <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
-          </Carousel>
-        </Col>
-      </div>
-    </>
-  );
-}
-
-export default InternationalSpaceStation;
+        */

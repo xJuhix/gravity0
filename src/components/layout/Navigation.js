@@ -12,9 +12,9 @@ import Home from "../pages/Home";
 import Telescopes from "../pages/Telescopes";
 import Programs from "../pages/Programs";
 import Events from "../pages/Events";
-import Iss from "../programs/Iss";
-import Mars from "../programs/Mars";
-import MoontoMars from "../programs/MoonToMars";
+import Iss from "../pages/Iss";
+import Mars from "../pages/Mars";
+import MoontoMars from "../pages/MoonToMars";
 import Search from "../pages/Search";
 import logo from "../../images/logo.png";
 
