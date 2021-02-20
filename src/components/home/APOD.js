@@ -28,7 +28,11 @@ function NasaDailyImage() {
   }, []);
 
   if (hasError) {
-    return <Alert variant="warning" className="erroralert" />;
+    return (
+      <Alert variant="warning" className="erroralert">
+        Sorry for the inconvinence but an error has occurd
+      </Alert>
+    );
   }
   if (loading) {
     return (
@@ -42,15 +46,15 @@ function NasaDailyImage() {
   }
   return (
     <>
-      <div className="image">
+      <div className="dailyimage">
         {image && (
           <>
             <Heading title={image.title} />
             <Row>
-              <Col md={5}>
+              <Col sm={6} md={6}>
                 <Image src={image.url} width="100%" className="Nasa-APOD" />
               </Col>
-              <Col md={7}>
+              <Col sm={6} md={6}>
                 <p>{image.explanation}</p>
                 <p>
                   <span>

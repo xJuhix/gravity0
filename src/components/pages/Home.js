@@ -3,9 +3,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Button from "react-bootstrap/Button";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Heading from "../layout/Heading";
 import APOD from "../home/APOD";
 
@@ -14,30 +14,29 @@ export function Home() {
     <>
       <Helmet>
         <title>Home</title>
-        <meta name="description" content="Gravity0 is a microsite for NASA" />
+        <meta
+          name="description"
+          content="GravityZero is a microsite for NASA covering their current and upcoming programs and missions"
+        />
       </Helmet>
 
-      <Row>
-        <Col>
-          <div className="page-intro">
-            <Heading title="Gravity0" />
-            <h2>Microsite for NASA</h2>
-            <p>
-              Here you will find NASA's telescopes, as well as, active and
-              upcoming programs. Alone NASA can only do so much, so over the
-              years NASA has devloped realtionships with other space agenices
-              and together they will explore the endless unknown. The purpose of
-              GravityZero is to infrom the public about active space programs
-              and missions as well as upcoming ones.
-            </p>
+      <div className="index">
+        <Heading title="Gravity0" />
+        <h2>Microsite for NASA</h2>
+        <p className="index__description">
+          Here you will find NASA's telescopes, as well as, active and upcoming
+          programs. Alone NASA can only do so much, so over the years NASA has
+          devloped realtionships with other space agenices and together they
+          will explore the endless unknown. The purpose of GravityZero is to
+          infrom the public about active space programs and missions as well as
+          upcoming ones.
+        </p>
 
-            <blockquote className="page__blockquote">
-              <q>Curiosity is the essence of our excistence</q>
-              <footer className="blockquote-footer">Gene Cernan</footer>
-            </blockquote>
-          </div>
-        </Col>
-      </Row>
+        <blockquote className="index__blockquote">
+          <q>Curiosity is the essence of our excistence</q>
+          <footer className="blockquote-footer">Gene Cernan</footer>
+        </blockquote>
+      </div>
 
       <div className="explore__buttons">
         <a target="_blank" href="https://eyes.nasa.gov/curiosity/">
@@ -57,16 +56,14 @@ export function Home() {
             What is Hubble looking at now ?
           </Button>
         </a>
-      </div>
 
-      <div className="explore__buttons">
-        <a target="_blank" href="https://youtu.be/6VqG3Jazrfs">
+        <Link to="/telescopes">
           <Button variant="explore" size="lg">
             James Webb 2021
           </Button>
-        </a>
+        </Link>
 
-        <Link to="/marsrover/">
+        <Link to="/moontomars">
           <Button variant="explore" size="lg">
             How are we gonna get to Mars
           </Button>

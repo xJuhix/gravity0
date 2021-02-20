@@ -6,22 +6,32 @@ $font-h3: 'Montserrat', sans-serif;
 $font-navlink: 'Playfair Display', serif;
 $font-p: 'Open Sans', sans-serif;
 
+
+
 h1 {
-  
+  color: white;
   font-family: $font-h1;
   padding-top: 1.5rem;
 	text-align: center;
 	font-weight: 600;
 }
 
+.jumbotron{
+	h1, p{
+		color: black;
+	}
+}
+
 h2 {
-  
+  color: white;
   font-family: $font-h2;
 	text-align: center;
 	font-weight: 600;
+	padding-bottom: 2rem;
 }
 
 h3 {
+	color: white;
 	font-family: $font-h3;
 	font-weight: 500;
 }
@@ -32,6 +42,7 @@ h3 {
 }
 
 p {
+	padding-top: 3rem;
 	color: white;
   font-family: $font-p;
 	font-size: 20px;
@@ -44,8 +55,11 @@ p {
 
 q {
   font-family: $font-navlink;
-  font-size: 32px;
+	font-size: 32px;
+	max-width: 20rem;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 
 	@media (max-width: 576px) {
 		font-size: 28px;

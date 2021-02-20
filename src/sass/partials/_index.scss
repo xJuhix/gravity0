@@ -1,66 +1,30 @@
-.background-image{
-	background-size: auto;
-  background-repeat: no-repeat;
-  background-position: top left;
-}
-
-
-.explore__buttons{
-	display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-	margin-bottom: 3rem;
-
-	.btn-explore {
-		background-color: $colour-white;
-		border-radius: 50%;
-		height: 200px;
-		width: 200px;
-		border: solid;
-		font-size: 24px;
-		font-family: $font-navlink;
-		font-weight: 500;
-
-		@media (max-width: 576px) and (max-width: 768px) {
-			font-size: 24px;
-			width: 300px;
-		}
-		
-		&:hover {
-			background-color: $colour-button;
-			color: $colour-secondary;
-			text-decoration: underline;
-			text-decoration-style: solid;
-			text-decoration-thickness: 3px;
-			text-decoration-color: $colour-secondary;
-			-webkit-text-decoration-color: $colour-secondary;
-			-webkit-text-decoration-thickness: 3px ;
-			-webkit-text-decoration-style: solid ;
-		}
-	}
-}
-
-
-.page-intro {
+.index {
 	margin-top: 7rem;
 	margin-bottom: 7rem;
 	background-color: $colour-headerfooter;
 	color: $colour-white;
 
-	@media (min-width: 768px) and (max-width: 1024px) {
-		height: 550px;
-		margin-top: 4rem;
-	}
-  
-  .row {
-		height: 300px;
-		margin-bottom: 7rem;
-
-    @media (min-width: 300px) and (max-width: 1080px) {
-      height: auto;
-    }
+	h2{
+		padding-bottom: 1rem;
 	}
 
+	&__description{
+		padding-top: 0;
+		width: 50rem;	
+		font-size: 18px;
+		margin-top: 2rem;
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+
+			@media (max-width: 576px) {
+				margin-left: 1.5rem;
+				margin-right: 1.5rem;
+				width: auto;
+			}
+				
+	}
+	
 	&__blockquote {
 		background-color: $colour-headerfooter;
 		color: $colour-white;
@@ -68,6 +32,7 @@
 		max-width: 700px;
 		margin-left: auto;
 		margin-right: auto;
+		padding-bottom: 1rem;
 
 		q{
 			margin-top: 3rem;
@@ -86,34 +51,51 @@
 			max-width: 550px;
 			padding: 5px;
 		}
+
+		.blockquote-footer{
+			color: $colour-white;
+		}
 	}
 
-		p {
-			font-size: 18px;
-			margin-top: 2rem;
-			text-align: center;
-			max-width: 1200px;
-			margin-left: auto;
-			margin-right: auto;
 
-			@media (min-width: 768px) and (max-width: 1024px) {
-				text-align: left;
-			}
+}
 
-			@media (max-width: 576px) {
-				text-align: left;
-				margin-left: 1.5rem;
-				margin-right: 1.5rem;
-			}
-			
+.explore__buttons{
+	display: flex;
+	justify-content: space-evenly;
+  align-items: center;
+	margin-bottom: 3rem;
+
+	@media (max-width: 576px) and (max-width: 768px) {
+		flex-direction: column;
+	}
+
+	.btn-explore {
+		background-color: $colour-white;
+		border-radius: 50%;
+		height: 200px;
+		width: 200px;
+		border: solid;
+		font-size: 24px;
+		font-family: $font-navlink;
+		font-weight: 500;
+
+		@media (max-width: 576px) and (max-width: 768px) {
+			font-size: 24px;
+			margin-bottom: 1.5rem;
 		}
 		
-	  .blockquote-footer{
-		color: $colour-white;
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-
+		&:hover {
+			background-color: $colour-button;
+			color: $colour-secondary;
+			text-decoration: underline;
+			text-decoration-style: solid;
+			text-decoration-thickness: 3px;
+			text-decoration-color: $colour-secondary;
+			-webkit-text-decoration-color: $colour-secondary;
+			-webkit-text-decoration-thickness: 3px ;
+			-webkit-text-decoration-style: solid ;
+		}
 	}
 
 }
@@ -121,4 +103,39 @@
 .NASA-Image{
 	background-color: #000;
 	color: #fff;
+}
+
+.dailyimage{
+
+	.heading{
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.Nasa-APOD{
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding-top: 2rem;
+		padding-left: 2rem;
+
+		@media (max-width: 576px) and (max-width: 768px) {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+	}
+	
+	p{
+		padding-left: 3rem;
+		max-width: 37rem;
+
+		@media (max-width: 576px) and (max-width: 768px) {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+	}
+
+	@media (max-width: 576px) and (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+	}
 }

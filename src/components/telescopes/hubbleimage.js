@@ -5,7 +5,8 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Spinner from "react-bootstrap/Spinner";
-import Alert from "react-bootstrap/Alert";
+// import Alert from "react-bootstrap/Alert";
+import HubbleTelescope from "../../images/hubble.jpg";
 import { HUBBLE, HUBBLE_IMAGES } from "../../constants/api";
 
 function HubbleImage() {
@@ -48,7 +49,15 @@ function HubbleImage() {
   }, [url]);
 
   if (hasError) {
-    return <Alert variant="warning" className="erroralert" />;
+    return (
+      <Col>
+        <Image
+          src={HubbleTelescope}
+          className="d-block w-100 telescope-image"
+          alt="Hubble Space Telescope"
+        />
+      </Col>
+    );
   }
   if (loading) {
     return (

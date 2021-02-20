@@ -4,10 +4,15 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
-  max-height: 550px;
   transition: all 0.2s;
-  width: 19rem;
+	
 
+	p{
+		color: black;
+	}
+	.btn-link{
+		color: white;
+	}
   &:hover {
     box-shadow: 6px 6px 6px 6px $colour-secondary;
 	}

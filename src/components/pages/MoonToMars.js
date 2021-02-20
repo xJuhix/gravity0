@@ -20,10 +20,9 @@ export function MoonToMars() {
       <Jumbotron>
         <Container>
           <Heading title="Artemis" />
-          <q>
-            To prepare for Mars we must study and prove new human deep space
-            capabilities on our Moon.
-          </q>
+          <blockquote className="blockquote">
+            <q>Curiosity is the essence of our excistence</q>
+          </blockquote>
         </Container>
       </Jumbotron>
 
