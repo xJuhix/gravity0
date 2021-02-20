@@ -46,7 +46,7 @@ function NasaDailyImage() {
   }
   return (
     <>
-      <div className="dailyimage 3">
+      <div className="dailyimage">
         {image && (
           <>
             <Heading title={image.title} />

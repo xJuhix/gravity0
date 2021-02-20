@@ -8,9 +8,9 @@ import Chandra from "../../images/Chandra.jpg";
 export function ChandraOberservetory() {
   return (
     <>
-      <Col>
+      <div className="telescope">
         <Row>
-          <Col md={6}>
+          <Col md={12} lg={6}>
             <div className="telescope__information">
               <p>
                 Since its launch on July 23, 1999, the Chandra X-ray Observatory
@@ -32,7 +32,7 @@ export function ChandraOberservetory() {
               </a>
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={12} lg={6}>
             <img
               className="d-block w-100 telescope-image"
               src={Chandra}
@@ -40,7 +40,7 @@ export function ChandraOberservetory() {
             />
           </Col>
         </Row>
-      </Col>
+      </div>
     </>
   );
 }

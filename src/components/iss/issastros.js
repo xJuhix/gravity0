@@ -41,16 +41,12 @@ function IssAstros() {
       <div className="live__iss">
         {astros && (
           <>
-            <p>
-              <strong>There are</strong> {astros.number}{" "}
-              <strong>astronauts</strong>
-            </p>
-            <p>
-              <strong>These are their names</strong>
+            <p>There are {astros.number} astronauts</p>
+            <ul>
               {astros.people.map((astronauts) => (
-                <p key={astronauts.name}>{astronauts.name}</p>
+                <li key={astronauts.name}>{astronauts.name}</li>
               ))}
-            </p>
+            </ul>
           </>
         )}
       </div>

@@ -3,8 +3,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Button from "react-bootstrap/Button";
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import Heading from "../layout/Heading";
 import APOD from "../home/APOD";
@@ -21,21 +21,24 @@ export function Home() {
       </Helmet>
 
       <div className="index">
-        <Heading title="Gravity0" />
-        <h2>Microsite for NASA</h2>
-        <p className="index__description">
-          Here you will find NASA's telescopes, as well as, active and upcoming
-          programs. Alone NASA can only do so much, so over the years NASA has
-          devloped realtionships with other space agenices and together they
-          will explore the endless unknown. The purpose of GravityZero is to
-          infrom the public about active space programs and missions as well as
-          upcoming ones.
-        </p>
-
-        <blockquote className="index__blockquote">
-          <q>Curiosity is the essence of our excistence</q>
-          <footer className="blockquote-footer">Gene Cernan</footer>
-        </blockquote>
+        <Jumbotron>
+          <Container>
+            <Heading title="Gravity0" />
+            <h2>Microsite for NASA</h2>
+            <p className="index__description">
+              Here you will find NASA's telescopes, as well as, active and
+              upcoming programs. Alone NASA can only do so much, so over the
+              years NASA has devloped realtionships with other space agenices
+              and together they will explore the endless unknown. The purpose of
+              GravityZero is to infrom the public about active space programs
+              and missions as well as upcoming ones.{" "}
+            </p>
+            <blockquote className="index__blockquote">
+              <q>Curiosity is the essence of our excistence</q>
+              <footer className="blockquote-footer">Gene Cernan</footer>
+            </blockquote>
+          </Container>
+        </Jumbotron>
       </div>
 
       <div className="explore__buttons">

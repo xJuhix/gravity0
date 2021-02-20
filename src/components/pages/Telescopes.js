@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable import/no-named-as-default-member */
@@ -11,8 +12,8 @@ import Heading from "../layout/Heading";
 import JamesWebbTelescope from "../telescopes/jwst";
 import HubbleTelescope from "../telescopes/hst";
 import SpitzerTelescope from "../telescopes/sst";
-import ChandraOberservetory from "../telescopes/cgro";
-import ComptonObservatory from "../telescopes/co";
+import ChandraOberservetory from "../telescopes/co";
+import ComptonObservatory from "../telescopes/cgro";
 import TelescopeCarousel from "../carousels/TelescopeCarousel";
 
 export function Telescopes() {

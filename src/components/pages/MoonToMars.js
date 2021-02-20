@@ -21,7 +21,8 @@ export function MoonToMars() {
         <Container>
           <Heading title="Artemis" />
           <blockquote className="blockquote">
-            <q>Curiosity is the essence of our excistence</q>
+            <q>Mars is there, waiting to be reached</q>
+            <footer className="blockquote-footer">Buzz Aldrin</footer>
           </blockquote>
         </Container>
       </Jumbotron>
@@ -29,7 +30,7 @@ export function MoonToMars() {
       <div className="iss">
         <Col>
           <Row>
-            <Col>
+            <Col md={12}>
               <p>
                 Artemis is a part of a NASA's program called Explore Moon to
                 Mars. Collaborating with commercial and international partners
@@ -41,25 +42,8 @@ export function MoonToMars() {
                 The first part of the program is to have sent the first woman
                 and the next man to the moon by 2024.
               </p>
-              <a target="_blank" href="https://www.jwst.nasa.gov">
-                {" "}
-                Source: NASA
-              </a>
             </Col>
-            <Col>
-              <iframe
-                width="600"
-                height="350"
-                src="https://www.youtube.com/embed/vl6jn-DdafM"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title="Going to the moon"
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col md={6}>
+            <Col md={12}>
               <p>
                 Artemis I, formerly Exploration Mission-1, is the first in a
                 series of increasingly complex missions that will enable human
@@ -81,6 +65,19 @@ export function MoonToMars() {
                 {" "}
                 Source: NASA
               </a>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <iframe
+                width="600"
+                height="350"
+                src="https://www.youtube.com/embed/vl6jn-DdafM"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                title="Going to the moon"
+              />
             </Col>
             <Col>
               <iframe

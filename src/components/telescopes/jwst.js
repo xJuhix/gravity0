@@ -7,10 +7,10 @@ import Col from "react-bootstrap/Col";
 export function WebbTelescope() {
   return (
     <>
-      <Col>
+      <div className="telescope">
         <Row>
-          <Col md={6}>
-            <div>
+          <Col md={12} lg={6}>
+            <div className="telescope__information">
               <p>
                 Webb will be the premier observatory of the next decade, serving
                 thousands of astronomers worldwide. It will study every phase in
@@ -50,7 +50,7 @@ export function WebbTelescope() {
               />
             </Col>
           </div>
-          <div className="d-none d-md-block d-lg-none webb-video">
+          <div md={12} className="d-none d-md-block d-lg-none webb-video">
             <Col>
               <iframe
                 width="700"
@@ -63,10 +63,10 @@ export function WebbTelescope() {
               />
             </Col>
           </div>
-          <div className="d-none d-lg-block d-xl-block webb-video">
+          <div lg={6} className="d-none d-lg-block d-xl-block webb-video">
             <Col>
               <iframe
-                width="850"
+                width="770"
                 height="500"
                 src="https://www.youtube.com/embed/6VqG3Jazrfs"
                 frameBorder="0"
@@ -77,7 +77,7 @@ export function WebbTelescope() {
             </Col>
           </div>
         </Row>
-      </Col>
+      </div>
     </>
   );
 }

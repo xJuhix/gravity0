@@ -15,7 +15,10 @@ export function InternationalSpaceStation() {
     <>
       <Helmet>
         <title>International Space Station</title>
-        <meta name="description" content="The International Space Station." />
+        <meta
+          name="description"
+          content="The International Space Station, who is onboard as where it is"
+        />
       </Helmet>
 
       <Jumbotron>
@@ -25,9 +28,9 @@ export function InternationalSpaceStation() {
       </Jumbotron>
 
       <div className="iss">
-        <Col>
+        <Col className="information">
           <Row>
-            <Col md={6}>
+            <Col sm={6}>
               <p>
                 An international partnership of space agencies provides and
                 operates the elements of the ISS. The principals are the space
@@ -40,18 +43,8 @@ export function InternationalSpaceStation() {
                 communications networks, and the international scientific
                 research community.
               </p>
-              <a target="_blank" href="https://www.jwst.nasa.gov">
-                {" "}
-                Source: NASA
-              </a>
             </Col>
-            <Col>
-              <h3>In space right now </h3>
-              <ISSAstros />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
+            <Col sm={6}>
               <p>
                 Launched in 1998 and involving the U.S., Russia, Canada, Japan,
                 and the participating countries of the European Space Agency—the
@@ -61,10 +54,20 @@ export function InternationalSpaceStation() {
                 orbit. It has been visited by astronauts from 18 countries—and
                 counting.
               </p>
+              <a target="_blank" href="https://www.jwst.nasa.gov">
+                {" "}
+                Source: NASA
+              </a>
             </Col>
-            <Col>
+          </Row>
+          <Row className="live-information">
+            <Col sm={6}>
               <h3>Where is the Space Station right now </h3>
               <LiveISS />
+            </Col>
+            <Col sm={6}>
+              <h3>In space right now </h3>
+              <ISSAstros />
             </Col>
           </Row>
         </Col>

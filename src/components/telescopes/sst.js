@@ -8,9 +8,9 @@ import Spitzer from "../../images/spitzer.jpg";
 export function SpitzerSpaceTelescope() {
   return (
     <>
-      <Col>
+      <div className="telescope">
         <Row>
-          <Col md={6}>
+          <Col md={12} lg={6}>
             <div className="telescope__information">
               <p>
                 The Spitzer Space Telescope is the final mission in NASA's Great
@@ -33,7 +33,7 @@ export function SpitzerSpaceTelescope() {
               </a>
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={12} lg={6}>
             <img
               className="d-block w-100 telescope-image"
               src={Spitzer}
@@ -41,7 +41,7 @@ export function SpitzerSpaceTelescope() {
             />
           </Col>
         </Row>
-      </Col>
+      </div>
     </>
   );
 }

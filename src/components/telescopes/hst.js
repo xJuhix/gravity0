@@ -7,9 +7,9 @@ import HubbleImage from "./hubbleimage";
 export function HubbleSpaceTelescope() {
   return (
     <>
-      <Col>
+      <div className="telescope">
         <Row>
-          <Col md={6}>
+          <Col md={12} lg={6}>
             <div className="telescope__information">
               <p>
                 Hubble is one of NASA’s most successful and long-lasting science
@@ -37,11 +37,11 @@ export function HubbleSpaceTelescope() {
               </a>
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={12} lg={6}>
             <HubbleImage />
           </Col>
         </Row>
-      </Col>
+      </div>
     </>
   );
 }

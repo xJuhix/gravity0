@@ -5,12 +5,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CGRO from "../../images/CGRO.jpg";
 
-export function CGROberservetory() {
+export function CGRObservatory() {
   return (
     <>
-      <Col>
+      <div className="telescope">
         <Row>
-          <Col md={6}>
+          <Col md={12} lg={6}>
             <div className="telescope__information">
               <p>
                 The Compton Gamma Ray Observatory was the second of NASA's Great
@@ -46,7 +46,7 @@ export function CGROberservetory() {
               </a>
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={12} lg={6}>
             <img
               className="d-block w-100 telescope-image"
               src={CGRO}
@@ -54,9 +54,9 @@ export function CGROberservetory() {
             />
           </Col>
         </Row>
-      </Col>
+      </div>
     </>
   );
 }
 
-export default CGROberservetory;
+export default CGRObservatory;
