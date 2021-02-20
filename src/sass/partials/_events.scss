@@ -1,14 +1,15 @@
+//Launch
 .launches, .events {
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
 }
 
-.launch {
+.launch, .event {
 	display: flex;
 	flex-direction: row;
-	background: #eee;
-	color: #000;
+	background: #0e0e0e2a;
+	border: $colour-secondary solid 1px;
 	gap: 10px;
 	border-radius: 10px;
     overflow: hidden;
@@ -20,6 +21,8 @@
 .launch > .row {
 	width: 100%;
 }
+
+
  .launch .launch-image {
     width: 240px;
     min-width: 240px;
@@ -49,54 +52,56 @@
 	text-align: left;
 }
 
+//Events
+
 .events {
 	padding: 0 25px;
+
+	.event {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		border: $colour-button solid 3px;
+		gap: 15px;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+
+		.event-info {
+			flex: 1 0 0px;
+			
+			border-radius: 10px;
+			padding: 10px;
+
+			.event-title {
+				font-weight: bold;
+				text-decoration: none;
+				font-size: 1.25rem;
+
+				:hover {
+					color: black;
+				}
+			}
+
+			.event-minor {
+				font-weight: 600;
+
+				span {
+					text-transform: uppercase;
+					font-weight: bold;
+					color: #22a6b3;
+					border-radius: 10px;
+					text-align: left;
+				}
+			}
+		}
+
+		img {
+			width: 250px;
+			max-height: 300px;
+			border-radius: 10px;
+		}
+
+	}
+
 }
 
-.event {
-	display: flex;
-	width: 100%;
-	justify-content: center;
-	gap: 15px;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-}
-
-.event > .event-info {
-	flex: 1 0 0px;
-	background: #eee;
-	border-radius: 10px;
-	padding: 10px;
-}
-
-.event > img {
-	width: 250px;
-	max-height: 300px;
-	border-radius: 10px;
-}
-
-.event > .event-info > .event-title {
-	font-weight: bold;
-	text-decoration: none;
-	font-size: 1.25rem;
-}
-
-.event > .event-info > .event-title:hover {
-	color: black;
-}
-
-.event-info > .event-minor {
-	font-weight: 600;
-}
-
-.event-info > p {
-	font-size: 1rem;
-}
-
-.event-info > .event-minor > span {
-	text-transform: uppercase;
-	font-weight: bold;
-	color: #22a6b3;
-	border-radius: 10px;
-	padding-right: 5px;
-}

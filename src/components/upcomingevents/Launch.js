@@ -1,10 +1,5 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable prefer-destructuring */
-/* eslint-disable jsx-a11y/img-redundant-alt */
-
 import React, { useState, useEffect } from "react";
-// import PropTypes from "prop-types";
 
 function Launch(props) {
   const [timer, setTimer] = useState({
@@ -13,7 +8,7 @@ function Launch(props) {
     minutes: 0,
     seconds: 0,
   });
-  const launch = props.launch;
+  const { launch } = props;
   useEffect(() => {
     setInterval(() => {
       const diff = new Date(launch.net) - new Date();
@@ -42,9 +37,9 @@ function Launch(props) {
           day: "numeric",
           timeZone: "utc",
         })},
-									 ${Intl.DateTimeFormat("en", { hour: "numeric" })
-                     .format(new Date(launch.net))
-                     .toString()}`}</h6>
+									   ${Intl.DateTimeFormat("en", { hour: "numeric" })
+                       .format(new Date(launch.net))
+                       .toString()}`}</h6>
         <p>
           {launch.mission
             ? launch.mission.description
@@ -54,14 +49,4 @@ function Launch(props) {
     </div>
   );
 }
-
-/* launch.propTypes = {
-  id: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
-  net: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  mission: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-}; */
-
 export default Launch;
