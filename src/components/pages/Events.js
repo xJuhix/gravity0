@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/jsx-no-target-blank */
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
@@ -48,7 +49,7 @@ export function InternationalSpaceStation() {
                   <>
                     {events.map((event) => (
                       <div className="event" key={event.name}>
-                        <img alt="" src={`${event.feature_image}`} />
+                        <img src={`${event.feature_image}`} />
                         <div className="event-info">
                           <div className="event-minor">
                             <span>{event.type.name}</span>
