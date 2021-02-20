@@ -41,7 +41,7 @@
 			margin-right: auto;
 		}
 
-		@media (min-width: 768px) and (max-width: 1024px) {
+		@media (min-width: 768px) {
 			margin-left: 2rem;
 			margin-right: 2rem;
 		}
@@ -66,7 +66,7 @@
   align-items: center;
 	margin-bottom: 3rem;
 
-	@media (max-width: 576px) and (max-width: 768px) {
+	@media (max-width: 768px) {
 		flex-direction: column;
 	}
 
@@ -80,7 +80,7 @@
 		font-family: $font-navlink;
 		font-weight: 500;
 
-		@media (max-width: 576px) and (max-width: 768px) {
+		@media (max-width: 768px) {
 			font-size: 24px;
 			margin-bottom: 1.5rem;
 		}
@@ -106,6 +106,9 @@
 }
 
 .dailyimage{
+	display: flex;
+	flex-direction: column;
+	padding-left: 1.5rem;
 
 	.heading{
 		margin-top: 1rem;
@@ -116,26 +119,15 @@
 		margin-top: 1rem;
 		margin-bottom: 1rem;
 		padding-top: 2rem;
-		padding-left: 2rem;
-
-		@media (max-width: 576px) and (max-width: 768px) {
-			padding-left: 1rem;
-			padding-right: 1rem;
-		}
 	}
 	
 	p{
-		padding-left: 3rem;
-		max-width: 37rem;
-
-		@media (max-width: 576px) and (max-width: 768px) {
-			padding-left: 1rem;
-			padding-right: 1rem;
-		}
+		padding-top: 2.5rem;
+		max-width: 45rem;
 	}
 
-	@media (max-width: 576px) and (max-width: 768px) {
-		display: flex;
-		flex-direction: column;
+	@media (max-width: 1024px) {
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 }
