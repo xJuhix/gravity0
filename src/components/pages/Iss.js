@@ -46,7 +46,7 @@ export function InternationalSpaceStation() {
               </a>
             </Col>
             <Col>
-              <h3>Who is space right now </h3>
+              <h3>In space right now </h3>
               <ISSAstros />
             </Col>
           </Row>

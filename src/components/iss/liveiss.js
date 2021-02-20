@@ -10,16 +10,17 @@ function IssLocation() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(ISS_LOCATION)
-      .then((response) => response.json())
-      .then((json) => {
-        setIss(json);
-        console.log(json);
-      })
-      .catch((error) => {
-        setError(error);
-      })
-      .finally(() => setLoading(false));
+    setInterval(function () {
+      fetch(ISS_LOCATION)
+        .then((response) => response.json())
+        .then((json) => {
+          setIss(json);
+        })
+        .catch((error) => {
+          setError(error);
+        })
+        .finally(() => setLoading(false));
+    }, 15000);
   }, []);
 
   if (hasError) {

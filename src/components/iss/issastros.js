@@ -42,10 +42,11 @@ function IssAstros() {
         {astros && (
           <>
             <p>
-              <strong>Number:</strong> {astros.number}
+              <strong>There are</strong> {astros.number}{" "}
+              <strong>astronauts</strong>
             </p>
             <p>
-              <strong>Who</strong>
+              <strong>These are their names</strong>
               {astros.people.map((astronauts) => (
                 <p key={astronauts.name}>{astronauts.name}</p>
               ))}
