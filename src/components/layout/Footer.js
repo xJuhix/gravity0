@@ -14,7 +14,7 @@ function Footer() {
       <footer className="footer">
         <div className="footer__container">
           <div className="footer__text">
-            <p>&copy; 2020 Gravity0</p>
+            <p>&copy; 2021 GravityZero</p>
           </div>
           <div className="footer__links">
             <a

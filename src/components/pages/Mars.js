@@ -59,16 +59,13 @@ export function Mars() {
           <h2>How are we exploring Mars</h2>
           <div className="marsprogram__rovers">
             <Container>
-              <div className="d-md-none rover-accordian">
+              <div className="d-md-block d-lg-none  rover-accordian">
                 <RoverAccordian />
               </div>
-              <div className="d-none d-md-block rover-tabs">
+              <div className="d-none d-md-none d-lg-block rover-tabs">
                 <RoverTabs />
               </div>
             </Container>
-          </div>
-          <div className="marsporgram__images">
-            <p>Add mars image carousel</p>
           </div>
         </Col>
         <MarsCarousel />

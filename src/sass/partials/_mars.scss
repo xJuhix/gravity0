@@ -40,6 +40,7 @@
 
 			.nav-tabs .nav-link.active, 
 			.nav-tabs .nav-item.show .nav-link{
+				font-size: 22px;
 				color: white;
 				background-color: black;
 				border-color: black;
@@ -56,5 +57,36 @@
 			}
 		}
 		
+	}
+	.btn-explore {
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: $colour-white;
+		color: black;
+		border-radius: 20px;
+		width: 50%;
+		border: solid;
+		font-size: 24px;
+		font-family: $font-navlink;
+		font-weight: 500;
+	
+		@media (max-width: 768px) {
+			font-size: 24px;
+			margin-bottom: 1.5rem;
+			width: 100%;
+		}
+		
+		&:hover {
+			background-color: $colour-button;
+			color: $colour-secondary;
+			text-decoration: underline;
+			text-decoration-style: solid;
+			text-decoration-thickness: 3px;
+			text-decoration-color: $colour-secondary;
+			-webkit-text-decoration-color: $colour-secondary;
+			-webkit-text-decoration-thickness: 3px ;
+			-webkit-text-decoration-style: solid ;
+		}
 	}
 }

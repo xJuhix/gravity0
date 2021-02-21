@@ -37,45 +37,17 @@ export function WebbTelescope() {
               </a>
             </div>
           </Col>
-          <div className="d-none d-sm-block d-md-none webb-video">
-            <Col>
-              <iframe
-                width="350"
-                height="200"
-                src="https://www.youtube.com/embed/6VqG3Jazrfs"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title="James Webb Telescope"
-              />
-            </Col>
-          </div>
-          <div md={12} className="d-none d-md-block d-lg-none webb-video">
-            <Col>
-              <iframe
-                width="700"
-                height="400"
-                src="https://www.youtube.com/embed/6VqG3Jazrfs"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title="James Webb Telescope"
-              />
-            </Col>
-          </div>
-          <div lg={6} className="d-none d-lg-block d-xl-block webb-video">
-            <Col>
-              <iframe
-                width="770"
-                height="500"
-                src="https://www.youtube.com/embed/6VqG3Jazrfs"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title="James Webb Telescope"
-              />
-            </Col>
-          </div>
+          <Col md={12} lg={6} className="webbvideo">
+            <iframe
+              width="770"
+              height="500"
+              src="https://www.youtube.com/embed/6VqG3Jazrfs"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              title="James Webb Telescope"
+            />
+          </Col>
         </Row>
       </div>
     </>

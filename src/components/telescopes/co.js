@@ -34,7 +34,7 @@ export function ChandraOberservetory() {
           </Col>
           <Col md={12} lg={6}>
             <img
-              className="d-block w-100 telescope-image"
+              className=" d-block w-100 telescope-image"
               src={Chandra}
               alt="Chandra X-ray Observatory"
             />

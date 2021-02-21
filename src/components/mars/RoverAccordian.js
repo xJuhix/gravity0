@@ -26,7 +26,7 @@ function RoverAccordian() {
               alt="Curiosity Rover"
             />
             <Card.Text>
-              <h3 className="d-sm-none d-md-block">About Curiosity</h3>
+              <h3 className="d-sm-block d-md-none">About Curiosity</h3>
               <p>
                 Part of NASA's Mars Science Laboratory mission, Curiosity is the
                 largest and most capable rover ever sent to Mars. It launched
@@ -49,7 +49,11 @@ function RoverAccordian() {
               </a>
             </Card.Text>
             <a target="_blank" href="https://mars.nasa.gov/msl/home/">
-              <Button variant="submit" block className="button mt-auto btn-lg ">
+              <Button
+                variant="explore"
+                block
+                className="button mt-auto btn-lg "
+              >
                 Learn More
               </Button>
             </a>
@@ -89,7 +93,11 @@ function RoverAccordian() {
               target="_blank"
               href="http://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/ExoMars"
             >
-              <Button variant="submit" block className="button mt-auto btn-lg ">
+              <Button
+                variant="explore"
+                block
+                className="button mt-auto btn-lg "
+              >
                 Learn More
               </Button>
             </a>
@@ -141,7 +149,11 @@ function RoverAccordian() {
               target="_blank"
               href="https://mars.nasa.gov/mars2020/mission/overview/"
             >
-              <Button variant="submit" block className="button mt-auto btn-lg ">
+              <Button
+                variant="explore"
+                block
+                className="button mt-auto btn-lg "
+              >
                 Learn More
               </Button>
             </a>

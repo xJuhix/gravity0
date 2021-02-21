@@ -23,7 +23,9 @@ export function InternationalSpaceStation() {
 
       <Jumbotron>
         <Container>
-          <Heading title="International Space Sation" />
+          <div className="jumbotron-header">
+            <Heading title="International Space Sation" />
+          </div>
         </Container>
       </Jumbotron>
 

@@ -1,24 +1,27 @@
-.index > .jumbotron{
+.index {
+	
+	.jumbotron{
 	margin-top: 7rem;
 	margin-bottom: 7rem;
 	background-color: #0e0e0ea2;
 	color: white;
 
-	h1, h2, p{
-		color: white;
-	}
+		h1, h2, p{
+			color: white;
+		}
 
-	p {
-		padding-top: 1.5rem;
-	}
+		p {
+			padding-top: 1.5rem;
+		}
 
-	h2{
-		padding-bottom: 1rem;
-	}
-	.blockquote-footer{
-		color: white;
-		padding-top: 0.5rem;
-		font-size: 14px;
+		h2{
+			padding-bottom: 1rem;
+		}
+		.blockquote-footer{
+			color: white;
+			padding-top: 0.5rem;
+			font-size: 14px;
+		}
 	}
 }
 

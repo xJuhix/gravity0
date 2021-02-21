@@ -46,7 +46,7 @@ function RoverTabs() {
           </Col>
         </Row>
         <a target="_blank" href="https://mars.nasa.gov/msl/home/">
-          <Button variant="submit" block className="button mt-auto btn-lg ">
+          <Button variant="explore" block className="button mt-auto btn-lg ">
             Learn More
           </Button>
         </a>
@@ -84,7 +84,7 @@ function RoverTabs() {
           target="_blank"
           href="http://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/ExoMars"
         >
-          <Button variant="submit" block className="button mt-auto btn-lg ">
+          <Button variant="explore" block className="button mt-auto btn-lg ">
             Learn More
           </Button>
         </a>
@@ -128,7 +128,7 @@ function RoverTabs() {
           target="_blank"
           href="https://mars.nasa.gov/mars2020/mission/overview/"
         >
-          <Button variant="submit" block className="button mt-auto btn-lg ">
+          <Button variant="explore" block className="button mt-auto btn-lg ">
             Learn More
           </Button>
         </a>

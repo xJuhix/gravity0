@@ -18,10 +18,12 @@ $theme-colors: (
   'dark': $colour-headerfooter,
 );
 
+
 $font-size-base: 1rem !default;
-$h1-font-size: $font-size-base * 4 !default;
-$h2-font-size: $font-size-base * 2.5 !default;
-$h5-font-size: $font-size-base * 1.8 !default;
+$h1-font-size: $font-size-base * 3.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+
+
 
 $dropdown-font-size: 32px;
 
@@ -33,6 +35,13 @@ h1, h2, h3, h4, h5, h6,
   font-weight: $headings-font-weight;
 }
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 1024px,
+  lg: 1025px,
+  xl: 1200px
+) !default;
 $navbar-dark-color: $colour-white !default;
 
 $navbar-light-toggler-border-color: $colour-headerfooter !default;
@@ -62,7 +71,7 @@ $input-plaintext-color: $colour-primary;
 
 $body-bg: $colour-background;
 
-$card-bg: $colour-white;
+$card-bg: #0e0e0e;
 $card-cap-bg: $colour-heading;
 
 

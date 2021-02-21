@@ -51,10 +51,10 @@ function NasaDailyImage() {
           <>
             <Heading title={image.title} />
             <Row>
-              <Col sm={6} md={7} lg={6}>
+              <Col sm={6} md={6}>
                 <Image src={image.url} width="100%" className="Nasa-APOD" />
               </Col>
-              <Col sm={6} md={7} lg={6}>
+              <Col sm={6} md={6}>
                 <p>{image.explanation}</p>
                 <p>
                   <span>

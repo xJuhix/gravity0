@@ -35,7 +35,9 @@ export function Telescopes() {
           </Row>
           <Jumbotron>
             <Container>
-              <Heading title="Great Observatories program" />
+              <div className="jumbotron-header gro">
+                <Heading title="Great Observatories program" />
+              </div>
               <p>
                 To grasp the wonders of the cosmos, and understand its infinite
                 variety and splendor, we must collect and analyze radiation

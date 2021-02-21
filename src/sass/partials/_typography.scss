@@ -1,17 +1,24 @@
+
+@font-face {
+  font-family: 'Voyager';
+  src: local('Voyager'), url(../../fonts/Voyager/VoyagerLight.woff) format('woff');
+}
+
+
 //Typography
 
-$font-h1: 'Cormorant Garamond', serif;
-$font-h2: 'Montserrat', sans-serif;
+$font-h1: 'Jura', sans-serif;
+$font-h2: 'Voyager', sans-serif;
 $font-h3: 'Montserrat', sans-serif;
-$font-navlink: 'Playfair Display', serif;
-$font-p: 'Open Sans', sans-serif;
+$font-navlink: 'Roboto Mono', monospace;
+$font-p: 'Open Sans', sans-serif; 
 
 
 
 h1 {
   color: white;
   font-family: $font-h1;
-  padding-top: 1.5rem;
+	padding-top: 1.5rem;
 	text-align: center;
 	font-weight: 600;
 
@@ -22,6 +29,8 @@ h1 {
 		color: black;
 	}
 }
+
+
 
 h2 {
   color: white;
