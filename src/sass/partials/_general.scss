@@ -7,7 +7,13 @@ body {
 
 a{ 
 	color: white !important;
+
+	:hover{
+		color: white !important;
+	}
 }
+
+
 
 .spinner{
 	margin-top: 5rem;

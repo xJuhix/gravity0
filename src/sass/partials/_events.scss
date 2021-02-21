@@ -60,6 +60,19 @@
 .events {
 	padding: 0 25px;
 
+	h3:hover{
+		color: white;
+		text-decoration: underline $colour-secondary;
+	}
+
+	p{
+		padding-top: 1rem;
+
+		@media (max-width: 567px) {
+			padding-top: 0.5rem;
+		}
+	}
+
 	.event {
 		background: #0e0e0e2a;
 		display: flex;
@@ -69,6 +82,11 @@
 		gap: 15px;
 		margin-top: 2rem;
 		margin-bottom: 2rem;
+
+		@media (max-width: 768px) {
+			display: flex;
+			flex-direction:column;
+		}
 
 		.event-info {
 			flex: 1 0 0px;
@@ -90,20 +108,23 @@
 				font-weight: 600;
 				color: white;
 
-				span {
+				.event-type {
+					padding-top: 1rem;
 					text-transform: uppercase;
 					font-weight: bold;
 					color: #22a6b3;
 					border-radius: 10px;
-					text-align: left;
 				}
 			}
 		}
 
 		img {
 			width: 250px;
-			max-height: 300px;
 			border-radius: 10px;
+
+			@media (max-width: 768px) {
+				width: 100%;
+			}
 		}
 
 	}
