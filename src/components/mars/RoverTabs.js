@@ -24,7 +24,7 @@ function RoverTabs() {
             />
           </Col>
           <Col className="col-12 col-md-8">
-            <h3 className="d-sm-none d-md-block">Meet Curiosity</h3>
+            <h3 className="d-none d-lg-block">Meet Curiosity</h3>
             <p>
               Part of NASA's Mars Science Laboratory mission, Curiosity is the
               largest and most capable rover ever sent to Mars. It launched
