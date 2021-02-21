@@ -7,9 +7,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
-import Curiosity from "../../images/curiosity.jpg";
-import ExoMars from "../../images/exomars.jpg";
-import Preseverance from "../../images/preseverance.jpg";
+import Curiosity from "../../images/mars/curiosity.jpg";
+import ExoMars from "../../images/mars/exomars.jpg";
+import Preseverance from "../../images/mars/preseverance.jpg";
 
 function RoverTabs() {
   return (

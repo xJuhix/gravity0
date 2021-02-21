@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Spinner from "react-bootstrap/Spinner";
-import HubbleTelescope from "../../images/hubble.jpg";
+import HubbleTelescope from "../../images/telescope/hubble.jpg";
 import { HUBBLE, HUBBLE_IMAGES } from "../../constants/api";
 
 function HubbleImage() {

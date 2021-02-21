@@ -3,7 +3,7 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Spitzer from "../../images/spitzer.jpg";
+import Spitzer from "../../images/telescope/spitzer.jpg";
 
 export function SpitzerSpaceTelescope() {
   return (

@@ -3,7 +3,7 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import CGRO from "../../images/CGRO.jpg";
+import CGRO from "../../images/telescope/CGRO.jpg";
 
 export function CGRObservatory() {
   return (

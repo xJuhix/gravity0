@@ -3,7 +3,7 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Chandra from "../../images/Chandra.jpg";
+import Chandra from "../../images/telescope/Chandra.jpg";
 
 export function ChandraOberservetory() {
   return (

@@ -4,9 +4,9 @@ import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import Curiosity from "../../images/curiosity.jpg";
-import ExoMars from "../../images/exomars.jpg";
-import Preseverance from "../../images/preseverance.jpg";
+import Curiosity from "../../images/mars/curiosity.jpg";
+import ExoMars from "../../images/mars/exomars.jpg";
+import Preseverance from "../../images/mars/preseverance.jpg";
 
 function RoverAccordian() {
   return (

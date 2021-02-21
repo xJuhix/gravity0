@@ -5,7 +5,7 @@
 	gap: 25px;
 }
 
-.launch, .event {
+.launch {
 	display: flex;
 	flex-direction: row;
 	background: #0e0e0e2a;
@@ -16,19 +16,19 @@
 	text-align: center;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-}
 
-.launch > .row {
+	.row {
 	width: 100%;
-}
+	}
 
-
- .launch .launch-image {
+	.launch-image {
     width: 240px;
     min-width: 240px;
     min-height: 240px;
     background-position: center;
     background-size: cover;
+	}
+
 }
 
 .launch-block {
@@ -43,14 +43,17 @@
 }
 
 .launch-info {
+	color: white;
 	padding: 10px;
+
+	p {
+		font-size: 1rem;
+		margin: 0;
+		text-align: left;
+	}
 }
 
-.launch-info > p {
-	font-size: 1rem;
-	margin: 0;
-	text-align: left;
-}
+
 
 //Events
 
@@ -58,6 +61,7 @@
 	padding: 0 25px;
 
 	.event {
+		background: #0e0e0e2a;
 		display: flex;
 		width: 100%;
 		justify-content: center;
@@ -84,6 +88,7 @@
 
 			.event-minor {
 				font-weight: 600;
+				color: white;
 
 				span {
 					text-transform: uppercase;
