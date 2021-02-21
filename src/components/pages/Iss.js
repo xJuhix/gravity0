@@ -26,6 +26,13 @@ export function InternationalSpaceStation() {
           <div className="jumbotron-header">
             <Heading title="International Space Sation" />
           </div>
+          <blockquote className="blockquote">
+            <q>
+              The main goal of the International Space Station is to work on
+              peaceful projects. In space, we are all people from Earth.
+            </q>
+            <footer className="blockquote-footer">Sunita Williams</footer>
+          </blockquote>
         </Container>
       </Jumbotron>
 

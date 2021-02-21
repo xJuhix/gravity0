@@ -53,7 +53,7 @@ export function Telescopes() {
               </p>
             </Container>
           </Jumbotron>
-          <h2>Hubble</h2>
+          <h2>Hubble Space Telescope</h2>
           <Row>
             <HubbleTelescope />
           </Row>

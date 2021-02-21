@@ -22,6 +22,10 @@ export function Mars() {
       <Jumbotron>
         <Container>
           <Heading title="Mars Exploration Program" />
+          <blockquote className="blockquote">
+            <q>Mars is the only known planet inhabited solely by robots</q>
+            <footer className="blockquote-footer">?</footer>
+          </blockquote>
         </Container>
       </Jumbotron>
 
