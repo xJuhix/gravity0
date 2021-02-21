@@ -27,14 +27,14 @@ function UpcomingEvents() {
   return (
     <>
       <Helmet>
-        <title>Space Events</title>
+        <title>Events | Launches</title>
         <meta name="description" content="The International Space Station." />
       </Helmet>
 
       <div className="Events">
         <Row>
           <Col>
-            <Heading title="Upcoming Events" />
+            <Heading title="Events" />
             <Event />
           </Col>
           <Col>

@@ -5,53 +5,73 @@
 	gap: 25px;
 }
 
-.launch {
-	display: flex;
-	flex-direction: row;
-	background: #0e0e0e2a;
-	border: $colour-secondary solid 1px;
-	gap: 10px;
-	border-radius: 10px;
-    overflow: hidden;
-	text-align: center;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+.launches{
+	padding: 0 25px;
 
-	.row {
-	width: 100%;
-	}
-
-	.launch-image {
-    width: 240px;
-    min-width: 240px;
-    min-height: 240px;
-    background-position: center;
-    background-size: cover;
-	}
-
-}
-
-.launch-block {
-	display: block;
-	width: 100%;
-	height: 100%;
+	.launch {
+		display: flex;
+		flex-direction: row;
+		background: #0e0e0e5d;
+		border: $colour-secondary solid 1px;
+		gap: 10px;
+		border-radius: 10px;
+			overflow: hidden;
+		text-align: center;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
 	
-    max-width: 300px;
-    max-height: 300px;
-    min-height: 300px;
-    min-width: 300px;
-}
+		@media (max-width: 1024px) {
+			display: flex;
+			flex-direction:column;
+		}
+	
+		.row {
+		width: 100%;
+		}
+	
+		.launch-image {
+			width: 240px;
+			min-width: 240px;
+			min-height: 240px;
+			background-position: center;
+			background-size: cover;
 
-.launch-info {
-	color: white;
-	padding: 10px;
-
-	p {
-		font-size: 1rem;
-		margin: 0;
-		text-align: left;
+			@media (max-width: 1024px) {
+				width: 100%;
+				max-height: 90px;
+			}
+		}
+	
 	}
+	
+	.launch-block {
+		display: block;
+		width: 100%;
+		height: 100%;
+		
+			max-width: 300px;
+			max-height: 300px;
+			min-height: 300px;
+			min-width: 300px;
+	}
+	
+	.launch-info {
+		color: white;
+		padding: 10px;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	
+		p {
+			font-size: 1rem;
+			margin: 0;
+			text-align: left;
+		}
+	}
+
+	
 }
+
 
 
 
@@ -76,14 +96,13 @@
 	.event {
 		background: #0e0e0e2a;
 		display: flex;
-		width: 100%;
 		justify-content: center;
 		border: $colour-button solid 3px;
 		gap: 15px;
 		margin-top: 2rem;
 		margin-bottom: 2rem;
 
-		@media (max-width: 768px) {
+		@media (max-width: 1024px) {
 			display: flex;
 			flex-direction:column;
 		}
@@ -108,6 +127,11 @@
 				font-weight: 600;
 				color: white;
 
+				@media (max-width: 768px) {
+					display: flex;
+					flex-direction:column;
+				}
+
 				.event-type {
 					padding-top: 1rem;
 					text-transform: uppercase;
@@ -122,7 +146,7 @@
 			width: 250px;
 			border-radius: 10px;
 
-			@media (max-width: 768px) {
+			@media (max-width: 1024px) {
 				width: 100%;
 			}
 		}
