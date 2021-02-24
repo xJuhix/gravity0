@@ -1,21 +1,18 @@
 // custom
 
-$colour-headerfooter: #000;
-$colour-background: #fff;
-$colour-heading: #000;
-$colour-primary: #000;
-$colour-white: #fff;
+$color-black: #0A0A0A;
+$color-white: rgb(252, 248, 248);
+$color-bg: #0e0e0ea2;
 $colour-secondary: #dd361c;
 $colour-button:#061f4a;
 
-$colour-input: #3c3c3c;
 
 $medium-width: 768px;
 
 // bootstrap
 $theme-colors: (
-  'primary': $colour-primary,
-  'dark': $colour-headerfooter,
+  'primary': $color-black,
+  'dark': $color-black,
 );
 
 
@@ -42,37 +39,32 @@ $grid-breakpoints: (
   lg: 1024px,
   xl: 1200px
 ) !default;
-$navbar-dark-color: $colour-white !default;
+$navbar-dark-color: $color-white !default;
 
-$navbar-light-toggler-border-color: $colour-headerfooter !default;
-$navbar-light-color: $colour-white !default;
-$navbar-light-hover-color:  $colour-white !default;
-$navbar-light-active-color: $colour-white !default;      
-$navbar-light-brand-color: $colour-white !default;               
-$navbar-light-brand-hover-color: $colour-white !default;
+$navbar-light-toggler-border-color: $color-black !default;
+$navbar-light-color: $color-white !default;
+$navbar-light-hover-color:  $color-white !default;
+$navbar-light-active-color: $color-white !default;      
+$navbar-light-brand-color: $color-white !default;               
+$navbar-light-brand-hover-color: $color-white !default;
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 
-$nav-tabs-link-active-color: $colour-white !default;
+$nav-tabs-link-active-color: $color-white !default;
 $nav-link-disabled-color: rgb(218, 218, 218) fff !default;
 //$nav-tabs-link-active-border-color: $colour-secondary !default;
 
 
-$link-hover-color: $colour-white !default;
+$link-hover-color: $color-white !default;
 
-$jumbotron-color: $colour-heading !default;
-$jumbotron-bg: $colour-white !default;
+$jumbotron-color: $color-black !default;
+$jumbotron-bg: $color-white !default;
 
-$input-bg: $colour-white;
-$input-border-color: $colour-input;
 $border-radius: 3px;
 
-$input-placeholder-color: $colour-primary;
-$input-plaintext-color: $colour-primary;
-
-$body-bg: $colour-background;
+$body-bg: $color-white;
 
 $card-bg: #0e0e0e;
-$card-cap-bg: $colour-heading;
+$card-cap-bg: $color-black;
 
 
 $info: $colour-secondary !default;

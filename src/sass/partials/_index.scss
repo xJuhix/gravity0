@@ -3,11 +3,11 @@
 	.jumbotron{
 	margin-top: 7rem;
 	margin-bottom: 7rem;
-	background-color: #0e0e0ea2;
-	color: white;
+	background-color:$color-bg;
+	color: $color-white;
 
 		h1, h2, p{
-			color: white;
+			color: $color-white;
 		}
 
 		p {
@@ -18,7 +18,7 @@
 			padding-bottom: 1rem;
 		}
 		.blockquote-footer{
-			color: white;
+			color: $color-white;
 			padding-top: 0.5rem;
 			font-size: 14px;
 		}
@@ -38,7 +38,7 @@
 	}
 
 	.btn-explore {
-		background-color: $colour-white;
+		background-color: $color-white;
 		border-radius: 50%;
 		height: 200px;
 		width: 200px;

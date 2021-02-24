@@ -1,5 +1,5 @@
 .iss{
- background-color: #0e0e0ea2;
+ background-color:$color-bg;
 }
 .live-information{
 	
@@ -8,6 +8,6 @@
 	}
 	
 	li{
-		color: white;
+		color: $color-white;
 	}
 }

@@ -22,7 +22,7 @@ export function ChandraOberservetory() {
                 NASA's Chandra X-ray Observatory is a telescope specially
                 designed to detect X-ray emission from very hot regions of the
                 Universe such as exploded stars, clusters of galaxies, and
-                matter around black holes. Because X-rays are absorbed by
+                matter around$color-black holes. Because X-rays are absorbed by
                 Earth's atmosphere, Chandra must orbit above it, up to an
                 altitude of 139,000 km (86,500 mi) in space.
               </p>

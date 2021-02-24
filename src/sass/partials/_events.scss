@@ -56,7 +56,7 @@
 	}
 	
 	.launch-info {
-		color: white;
+		color: $color-white;
 		padding: 10px;
 		justify-content: center;
 		margin-left: auto;
@@ -81,7 +81,7 @@
 	padding: 0 25px;
 
 	h3:hover{
-		color: white;
+		color: $color-white;
 		text-decoration: underline $colour-secondary;
 	}
 
@@ -119,13 +119,13 @@
 				font-size: 1.25rem;
 
 				:hover {
-					color: black;
+					color:$color-black;
 				}
 			}
 
 			.event-minor {
 				font-weight: 600;
-				color: white;
+				color: $color-white;
 
 				@media (max-width: 768px) {
 					display: flex;

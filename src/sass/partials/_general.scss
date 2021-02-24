@@ -12,10 +12,10 @@ body {
 a{ 
 	padding-top: 0.5rem;
 	padding-bottom: 1rem;
-	color: white !important;
+	color: $color-white !important;
 
 	:hover{
-		color: white !important;
+		color: $color-white !important;
 	}
 }
 
