@@ -4,7 +4,7 @@
 /* eslint-disable import/no-named-as-default-member */
 import React from "react";
 import { Helmet } from "react-helmet";
-import Row from "react-bootstrap/Row";
+// import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
@@ -30,9 +30,7 @@ export function Telescopes() {
       <div className="telescopes">
         <Col>
           <Heading title="James Webb" />
-          <Row>
-            <JamesWebbTelescope />
-          </Row>
+          <JamesWebbTelescope />
           <Jumbotron>
             <Container>
               <div className="jumbotron-header gro">
@@ -54,21 +52,20 @@ export function Telescopes() {
             </Container>
           </Jumbotron>
           <h2>Hubble Space Telescope</h2>
-          <Row>
-            <HubbleTelescope />
-          </Row>
+
+          <HubbleTelescope />
+
           <h2>Chandra X-ray Observatory</h2>
-          <Row>
-            <ChandraOberservetory />
-          </Row>
+
+          <ChandraOberservetory />
+
           <h2>Spitzer Space Telescope</h2>
-          <Row>
-            <SpitzerTelescope />
-          </Row>
+
+          <SpitzerTelescope />
+
           <h2>Compton Gamma Ray Observatory</h2>
-          <Row>
-            <ComptonObservatory />
-          </Row>
+
+          <ComptonObservatory />
         </Col>
         <TelescopeCarousel />
       </div>

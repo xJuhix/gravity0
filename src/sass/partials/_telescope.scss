@@ -1,6 +1,8 @@
 .telescope{
-	display: flex;
-	justify-content: space-between;
+	
+	@media (min-width:768px) and (max-width:1024) {
+		flex-direction: column;
+	}
 
 	.telescope__information{
 		padding-top: 1rem;
@@ -22,17 +24,18 @@
 
 	}
 
-	.webbvideo{
-		margin-top: 2rem;
+}
 
-		@media (max-width: 768px) {
-			margin-right: 1rem;
-		}
-	
+.webbvideo{
+	margin-top: 2rem;
+
+	@media (max-width: 768px) {
+		margin-right: 1rem;
 	}
 
 }
 
-	
-		
+
+
+
 

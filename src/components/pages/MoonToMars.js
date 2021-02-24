@@ -30,7 +30,7 @@ export function MoonToMars() {
         </Container>
       </Jumbotron>
 
-      <div>
+      <div className="artemis-information">
         <Col>
           <Row>
             <Col>
@@ -83,7 +83,7 @@ export function MoonToMars() {
               <Row>
                 <iframe
                   width="770"
-                  height="350"
+                  height="400"
                   src="https://www.youtube.com/embed/_T8cn2J13-4"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -94,8 +94,8 @@ export function MoonToMars() {
             </Col>
           </Row>
         </Col>
-        <ArtemisCarousel />
       </div>
+      <ArtemisCarousel />
     </>
   );
 }
