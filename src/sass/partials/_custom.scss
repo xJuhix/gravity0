@@ -3,8 +3,8 @@
 $color-black: #0A0A0A;
 $color-white: rgb(252, 248, 248);
 $color-bg: #0e0e0ea2;
-$colour-secondary: #dd361c;
-$colour-button:#061f4a;
+$color-secondary: #dd361c;
+$color-button:#061f4a;
 
 
 $medium-width: 768px;
@@ -51,7 +51,7 @@ $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3
 
 $nav-tabs-link-active-color: $color-white !default;
 $nav-link-disabled-color: rgb(218, 218, 218) fff !default;
-//$nav-tabs-link-active-border-color: $colour-secondary !default;
+//$nav-tabs-link-active-border-color: $color-secondary !default;
 
 
 $link-hover-color: $color-white !default;
@@ -67,4 +67,4 @@ $card-bg: #0e0e0e;
 $card-cap-bg: $color-black;
 
 
-$info: $colour-secondary !default;
+$info: $color-secondary !default;

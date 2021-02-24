@@ -12,7 +12,7 @@
 		display: flex;
 		flex-direction: row;
 		background: #0e0e0e5d;
-		border: $colour-secondary solid 1px;
+		border: $color-secondary solid 1px;
 		gap: 10px;
 		border-radius: 10px;
 			overflow: hidden;
@@ -82,7 +82,7 @@
 
 	h3:hover{
 		color: $color-white;
-		text-decoration: underline $colour-secondary;
+		text-decoration: underline $color-secondary;
 	}
 
 	p{
@@ -97,7 +97,7 @@
 		background: #0e0e0e2a;
 		display: flex;
 		justify-content: center;
-		border: $colour-button solid 3px;
+		border: $color-button solid 3px;
 		gap: 15px;
 		margin-top: 2rem;
 		margin-bottom: 2rem;

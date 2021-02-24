@@ -53,13 +53,13 @@
 		}
 		
 		&:hover {
-			background-color: $colour-button;
-			color: $colour-secondary;
+			background-color: $color-button;
+			color: $color-secondary;
 			text-decoration: underline;
 			text-decoration-style: solid;
 			text-decoration-thickness: 3px;
-			text-decoration-color: $colour-secondary;
-			-webkit-text-decoration-color: $colour-secondary;
+			text-decoration-color: $color-secondary;
+			-webkit-text-decoration-color: $color-secondary;
 			-webkit-text-decoration-thickness: 3px ;
 			-webkit-text-decoration-style: solid ;
 		}

@@ -14,7 +14,7 @@
 		color: white;
 	}
   &:hover {
-    box-shadow: 6px 6px 6px 6px $colour-secondary;
+    box-shadow: 6px 6px 6px 6px $color-secondary;
 	}
 	
 
@@ -37,8 +37,8 @@
 
     &:hover {
       background-color: $color-button;
-			color: $colour-secondary;
-			text-decoration: underline 2px $colour-secondary;
+			color: $color-secondary;
+			text-decoration: underline 2px $color-secondary;
 			
     }
   }
