@@ -16,7 +16,7 @@ export function MoonToMars() {
         <title>Moon to Mars</title>
         <meta
           name="description"
-          content="The Moon to Mars will cover Artemis a part of the program on how we are going to reach Mars."
+          content="NASA's The Moon to Mars porgram page will cover Artemis a part of the program on how we are going to reach Mars."
         />
       </Helmet>
 

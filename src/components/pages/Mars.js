@@ -16,7 +16,10 @@ export function Mars() {
     <>
       <Helmet>
         <title>Mars Exploration Program</title>
-        <meta name="description" content="Mars Exploration Program" />
+        <meta
+          name="description"
+          content="About NASA's Mars Exploration Program and how we are exploring Mars"
+        />
       </Helmet>
 
       <Jumbotron>

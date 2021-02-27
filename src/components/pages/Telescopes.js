@@ -23,7 +23,7 @@ export function Telescopes() {
         <title>Telescopes</title>
         <meta
           name="description"
-          content="Here you will see the telescopes that NASA developed and are developing"
+          content="Here you will see the telescopes that NASA developed and are developing as well as the Great Observatories Program"
         />
       </Helmet>
 

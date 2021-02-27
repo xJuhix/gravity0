@@ -30,7 +30,7 @@ function UpcomingEvents() {
         <title>Events | Launches</title>
         <meta
           name="description"
-          content="Upcoming space events and launches "
+          content="Upcoming space events and launches from all over the world"
         />
       </Helmet>
 

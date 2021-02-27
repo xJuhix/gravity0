@@ -17,7 +17,7 @@ export function InternationalSpaceStation() {
         <title>International Space Station</title>
         <meta
           name="description"
-          content="The International Space Station, who is onboard as where it is"
+          content="The International Space Station, who is onboard and where it is"
         />
       </Helmet>
 
