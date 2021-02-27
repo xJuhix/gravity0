@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-
 import React, { useState, useEffect } from "react";
 
 function Launch(props) {
@@ -38,9 +37,9 @@ function Launch(props) {
           day: "numeric",
           timeZone: "utc",
         })},
-									   ${Intl.DateTimeFormat("en", { hour: "numeric" })
-                       .format(new Date(launch.net))
-                       .toString()}`}</h6>
+				${Intl.DateTimeFormat("en", { hour: "numeric" })
+          .format(new Date(launch.net))
+          .toString()}`}</h6>
         <p>
           {launch.mission
             ? launch.mission.description

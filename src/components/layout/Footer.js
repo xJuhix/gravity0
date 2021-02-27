@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import {
@@ -18,8 +19,10 @@ function Footer() {
           </div>
           <div className="footer__links">
             <a
-              href="#"
-              aria-label="Mail to Juhi saigal"
+              rel="external"
+              target="_blank"
+              href="https://www.nasa.gov/about/contact/index.html"
+              aria-label="NASA Contact Page"
               className="footer__socialmedia-icon"
             >
               <span>
@@ -27,7 +30,9 @@ function Footer() {
               </span>
             </a>
             <a
-              href="#"
+              rel="external"
+              target="_blank"
+              href="https://www.youtube.com/NASA"
               aria-label="NASA Youtubepage"
               className="footer__socialmedia-icon"
             >
@@ -36,7 +41,9 @@ function Footer() {
               </span>
             </a>
             <a
-              href="#"
+              rel="external"
+              target="_blank"
+              href="https://www.instagram.com/NASA/"
               aria-label="NASA Instagram"
               className="footer__socialmedia-icon"
             >
@@ -45,7 +52,9 @@ function Footer() {
               </span>
             </a>
             <a
-              href="#"
+              rel="external"
+              target="_blank"
+              href="https://www.facebook.com/NASA"
               aria-label="NASA Facebook"
               className="footer__socialmedia-icon"
             >
@@ -54,7 +63,9 @@ function Footer() {
               </span>
             </a>
             <a
-              href="#"
+              rel="external"
+              target="_blank"
+              href="https://twitter.com/NASA"
               aria-label=" NASA Twitter"
               className="footer__socialmedia-icon"
             >

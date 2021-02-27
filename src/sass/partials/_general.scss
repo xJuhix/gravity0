@@ -15,7 +15,7 @@ a{
 	color: $color-white !important;
 
 	:hover{
-		color: $color-white !important;
+		color: $color-white;
 	}
 }
 
@@ -88,6 +88,9 @@ a{
 		margin-right: 1rem;
 		margin-left: 1rem;
 	}
+	.webbvideo {
+		margin-right: 1rem;
+	}
 }
 
 @media (max-width:575px) {
@@ -95,6 +98,10 @@ a{
 		width:350px;
 		margin-right: 1rem;
 		margin-left: 1rem;
+	}
+
+	.webbvideo {
+		margin-left: -1rem;
 	}
 }
 

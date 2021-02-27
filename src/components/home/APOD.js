@@ -30,7 +30,10 @@ function NasaDailyImage() {
   if (hasError) {
     return (
       <Alert variant="warning" className="erroralert">
-        Sorry for the inconvinence but an error has occurd
+        <p>
+          Sorry for the inconvinence but an error has occurd and image could not
+          be loaded
+        </p>
       </Alert>
     );
   }

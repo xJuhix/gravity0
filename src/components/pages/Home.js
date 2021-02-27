@@ -40,7 +40,11 @@ export function Home() {
       </div>
 
       <div className="explore__buttons">
-        <a target="_blank" href="https://eyes.nasa.gov/curiosity/">
+        <a
+          rel="external"
+          target="_blank"
+          href="https://eyes.nasa.gov/curiosity/"
+        >
           <Button variant="explore" size="lg">
             See Mars through Curiosity's Eyes
           </Button>
@@ -52,7 +56,7 @@ export function Home() {
           </Button>
         </Link>
 
-        <a target="_blank" href="http://spacetelescopelive.org">
+        <a rel="external" target="_blank" href="http://spacetelescopelive.org">
           <Button variant="explore" size="lg">
             What is Hubble looking at now ?
           </Button>

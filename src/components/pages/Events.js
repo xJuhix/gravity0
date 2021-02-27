@@ -28,7 +28,10 @@ function UpcomingEvents() {
     <>
       <Helmet>
         <title>Events | Launches</title>
-        <meta name="description" content="The International Space Station." />
+        <meta
+          name="description"
+          content="Upcoming space events and launches "
+        />
       </Helmet>
 
       <div className="Events">

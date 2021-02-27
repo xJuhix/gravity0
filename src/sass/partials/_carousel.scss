@@ -1,5 +1,11 @@
 .carousel{
 	margin-top: 2rem;
+
+	h3 {
+		@media (max-width: 576px) {
+			font-size: 1.7rem;
+		}
+	}
 }
 .carousel-image{
 	max-height: 40rem;	
